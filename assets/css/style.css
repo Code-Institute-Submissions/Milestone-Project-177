@@ -22,6 +22,12 @@
 /*End of navbar*/
 
 /*Landing Page Background img*/
-#beach-bg-img {
-    background-image: url('https://mikew1999.github.io/Milestone-Project-2/assets/images/Milestone-Project-2');
+.beach {
+    height: 90vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url('https://mikew1999.github.io/Milestone-Project-2/assets/images/beach-1921598_1920.jpg');
 }
