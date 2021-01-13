@@ -23,9 +23,11 @@
 
 /*Landing Page Background img*/
 .beach {
+    background-image: url('#');
+    height: auto;
+    width: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    background-image: url('https://mikew1999.github.io/Milestone-Project-2/assets/images/beach-1921598_1920.jpg');
 }
