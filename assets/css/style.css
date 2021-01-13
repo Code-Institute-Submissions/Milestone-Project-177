@@ -23,8 +23,8 @@
 
 /*Landing Page Background img*/
 .beach {
-    height: 90vh;
-    width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
