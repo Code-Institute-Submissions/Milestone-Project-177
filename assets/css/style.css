@@ -1,3 +1,7 @@
+/*General*/
+.uppercase {
+    text-transform: uppercase;
+}
 /*Navbar*/
 #main-nav {
     margin: 0;
@@ -24,9 +28,30 @@
 /*Landing Page Background img*/
 .beach {
     background-image: url('https://mikew1999.github.io/Milestone-Project-2/assets/images/beach-5830657_1920.jpg');
-    height: 100vh;
+    height: 95vh;
+    max-width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+.header-box {
+    margin: 0 auto;
+    width: 50vw;
+    background-color: #ffffff;
+    opacity: 0.6;
+    height: fit-content;
+}
+
+.main-heading {
+    margin-top: 3rem;
+    color: #0685da;
+    font-size: 6rem;
+    letter-spacing: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.down-arrow {
+    text-align: right;
 }
