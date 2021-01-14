@@ -23,12 +23,16 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
+
+.nav-item .nav-link {
+    float: right;
+}
 /*End of navbar*/
 
 /*Landing Page Background img*/
 .beach {
     background-image: url('https://mikew1999.github.io/Milestone-Project-2/assets/images/beach-5830657_1920.jpg');
-    height: 95vh;
+    height: 100vh;
     max-width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -50,6 +54,13 @@
     letter-spacing: 4px;
     font-family: 'Montserrat', sans-serif;
     word-wrap: break-word;
+}
+
+.secondary-header-box {
+    margin: 10rem auto 0;
+    width: 60vw;
+    background-color: #ffffff;
+    opacity: 0.6;
 }
 
 .secondary-heading {
