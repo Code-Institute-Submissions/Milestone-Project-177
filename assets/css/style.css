@@ -41,17 +41,21 @@
     width: 50vw;
     background-color: #ffffff;
     opacity: 0.6;
-    height: fit-content;
 }
 
-.main-heading {
+.main-header {
     margin-top: 3rem;
     color: #0685da;
     font-size: 6rem;
     letter-spacing: 4px;
     font-family: 'Montserrat', sans-serif;
+    word-wrap: break-word;
 }
 
-.down-arrow {
-    text-align: right;
+.secondary-heading {
+    margin-top: 4rem;
+    color: #0685da;
+    font-size: 4rem;
+    letter-spacing: 4px;
+    word-wrap: break-word;
 }
