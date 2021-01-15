@@ -9,23 +9,8 @@
     background-color: #ffffff;
 }
 
-#logo {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-left: 0.5px;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    line-height: inherit;
-    white-space: nowrap;
-}
-
 #nav-text {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.nav-item .nav-link {
-    float: right;
+    min-width: 5rem;
 }
 /*End of navbar*/
 
