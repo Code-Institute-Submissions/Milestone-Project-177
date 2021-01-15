@@ -100,7 +100,7 @@
 }
 /*End of Landing page background media queries*/
 /*End of Landing page background section*/
-
+#map {min-height: 360px;}
 /*Footer*/
 .socials-icons {
     margin-left: 3rem;
