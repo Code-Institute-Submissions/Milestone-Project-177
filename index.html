@@ -7,6 +7,7 @@
     <title>Milestone Project 2</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -14,31 +15,26 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-lg bg-faded justify-content-center">
-    <a class="mr-sm-5" href="index.html">
-        <img src="assets/images/CroppedLogo.jpg" id="logo" width="200px" height="60px" alt="TripAway.com">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collapse">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-collapse collapse w-100" id="nav-collapse">
-        <div class="ml-sm-5 d-inline-block">
-            <span class="navbar-brand">
+        <a class="mr-sm-5" href="index.html">
+            <img src="assets/images/CroppedLogo.jpg" id="logo" width="200px" height="60px" alt="TripAway.com">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-100 text-center" id="nav-collapse">
+            <div class="ml-sm-5 d-inline-block">
                 Find Your Next Big Break!
-            </span>
+            </div>
+            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hot Deals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Popular Destinations</a>
+                </li>
+            </ul>
         </div>
-        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Hot Deals</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Popular Destinations</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Sign Up For Our Newsletter</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    </nav>
 
     <div class="container-fluid beach">
         <div class="row">
@@ -46,16 +42,29 @@
                 <div class="header-box text-center">
                     <h1 class="uppercase main-header">Trip Away</h1>
                 </div>
+            </div>
+            <div class="col">
                 <div class="secondary-header-box text-center">
                     <h3 class="secondary-heading">Find your favourite holiday destination</h3>
                 </div>
-                <a href="#"><i class="fas fa-caret-square-down down-arrow"></i></a>
             </div>
+        </div>
+        <div class="row">
+            <div class="col ml-auto p-2">
+                
+            </div>
+        </div>
+        <div class="down-arrow-container d-flex">
+            <div class="bottom-arrow ml-auto p-2"><a href="#"><i id="down-arrow" class="fas fa-caret-square-down"></i></a></div>
         </div>
     </div>
 
-    <footer>
-
+    <footer class="text-center">
+        <div class="socials-icons">
+            <a href=""><i class="fab fa-facebook-square">Facebook</i></a>
+            <a href=""><i class="fab fa-twitter-square"></i>Twitter</a>
+        </div>
+        <a href="">Sign Up For Our Newsletter</a>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

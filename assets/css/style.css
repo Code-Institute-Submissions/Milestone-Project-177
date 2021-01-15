@@ -29,6 +29,12 @@
     opacity: 0.6;
 }
 
+@media only screen and (max-width: 576px) {
+    .header-box {
+        width: 80vw;
+    }
+}
+
 .main-header {
     margin-top: 3rem;
     color: #0685da;
@@ -38,11 +44,24 @@
     word-wrap: break-word;
 }
 
+@media only screen and (max-width: 576px) {
+    .main-header {
+        font-size: 3rem;
+    }
+}
+
 .secondary-header-box {
     margin: 10rem auto 0;
     width: 60vw;
     background-color: #ffffff;
     opacity: 0.6;
+}
+
+@media only screen and (max-width: 576px) {
+    .secondary-header-box {
+        margin: 5rem auto 0;
+        width: 90vw;
+    }
 }
 
 .secondary-heading {
@@ -51,4 +70,34 @@
     font-size: 4rem;
     letter-spacing: 4px;
     word-wrap: break-word;
+}
+
+@media only screen and (max-width: 576px) {
+    .secondary-heading {
+        font-size: 2rem;
+    }
+}
+
+.down-arrow-container {
+    width:100px;
+    height:100px;
+}
+
+.bottom-arrow {
+    width:4rem;
+    height:4rem;
+    position:absolute;
+    right:20px;
+    bottom:20px;
+}
+
+#down-arrow {
+    color: #fff;
+    font-size: 2rem!important;
+}
+
+/*Footer*/
+.socials-icons {
+    margin-left: 3rem;
+    float: left;
 }
