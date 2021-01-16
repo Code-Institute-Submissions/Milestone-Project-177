@@ -1,9 +1,14 @@
+let map;
+
 function initMap() {
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 5,
-        center: {
-            lat: 38.707008,
-            lng: -9.135640
-        }
+    const localContextMapView = new google.maps.localContext.LocalContextMapView({
+        element: document.getElementById("map"),
+        placeTypePreferences: ["", "tourist_attraction"],
+        maxPlaceCount: 12,
+    });
+    map = localContextMapView.map;
+    map.setOptions({
+        center: { lat: 51.507307, lng: -0.08114 },
+        zoom: 14,
     });
 }

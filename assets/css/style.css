@@ -13,6 +13,7 @@
 
 /*Landing page background section*/
 .beach {
+    margin-top: 75px;
     background-image: url('https://mikew1999.github.io/Milestone-Project-2/assets/images/beach-5830657_1920.jpg');
     min-height: 92vh;
     max-height: 92vh;
@@ -100,7 +101,17 @@
 }
 /*End of Landing page background media queries*/
 /*End of Landing page background section*/
-#map {min-height: 360px;}
+#map {
+    height: 75vh;
+}
+
+.destination-search-form {
+
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+
 /*Footer*/
 .socials-icons {
     margin-left: 3rem;

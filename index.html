@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg bg-faded justify-content-center">
+    <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top justify-content-center">
         <a class="mr-sm-5" href="index.html">
             <img src="assets/images/CroppedLogo.jpg" id="logo" width="200px" height="60px" alt="TripAway.com">
         </a>
@@ -35,7 +35,7 @@
             </ul>
         </div>
     </nav>
-
+    
     <div class="container-fluid beach">
         <div class="row">
             <div class="col">
@@ -50,21 +50,32 @@
             </div>
         </div>
         <div class="down-arrow-container d-flex">
-            <div class="bottom-arrow ml-auto p-2"><a href="#destination-search"><i id="down-arrow"
+            <div class="bottom-arrow ml-auto p-2"><a href="#destination-search-header"><i id="down-arrow"
                         class="fas fa-caret-square-down"></i></a></div>
         </div>
     </div>
 
-    <section id="destination-search">
-        <h2 class="text-center">Have a destination in mind?</h2>
+    <section>
+        <h2 id="destination-search-header" class="text-center">Have a destination in mind?</h2>
         <h3 class="text-center">Search for it below!</h3>
 
-        <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
 
-        <div id="map"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center">
+                    <form class="d-flex destination-search-form">
+                        <input class="form-control me-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="text-center">
@@ -76,8 +87,9 @@
     </footer>
     <script
         src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvy_IybO4-YfPFc8QyTejADQICwR-xESo&callback=initMap"></script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvy_IybO4-YfPFc8QyTejADQICwR-xESo&libraries=localContext&v=beta&callback=initMap">
+        </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -89,4 +101,5 @@
         crossorigin="anonymous"></script>
     <script src="assets/scripts/map.js"></script>
 </body>
+
 </html>
