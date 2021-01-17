@@ -3,14 +3,9 @@
     text-transform: uppercase;
 }
 
-.push-down {
-    margin-bottom: 20rem;
-}
 /*Navbar*/
-#main-nav {
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
+.pushed-down {
+    margin-top: 100rem;
 }
 
 /*End of navbar*/
