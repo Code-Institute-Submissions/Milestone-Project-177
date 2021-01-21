@@ -13,8 +13,7 @@
 /*Landing page background section*/
 .beach {
     background-image: url('https://mikew1999.github.io/Milestone-Project-2/assets/images/beach-5830657_1920.jpg');
-    min-height: 92vh;
-    max-height: 92vh;
+    min-height: 96vh;
     max-width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,8 +22,8 @@
 }
 
 .header-box {
-    margin: 0 auto;
-    width: 50vw;
+    margin: 1rem auto 0;
+    width: 60vw;
     background-color: #ffffff;
     opacity: 0.6;
 }
@@ -39,18 +38,30 @@
 }
 
 .secondary-header-box {
-    margin: 10rem auto 0;
-    width: 60vw;
+    margin: 7.5rem auto 0;
+    width: 70vw;
     background-color: #ffffff;
     opacity: 0.6;
 }
 
 .secondary-heading {
-    margin-top: 4rem;
     color: #0685da;
-    font-size: 4rem;
+    font-size: 6rem;
     letter-spacing: 4px;
     word-wrap: break-word;
+}
+
+.landing-page-buttons {
+    margin-top: 15rem;
+}
+
+.landing-page-buttons button {
+    width: 15rem;
+    height: 3rem;
+}
+
+.landing-page-buttons button a {
+    text-decoration: none;
 }
 
 .down-arrow-container {
@@ -72,27 +83,59 @@
 }
 
 /*Landing page background media queries*/
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1000px) {
+    .header-box {
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 778px) {
     .header-box {
         width: 80vw;
     }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 778px) {
     .main-header {
         font-size: 3rem;
     }
 }
 
+@media only screen and (max-width: 1600px) {
+    .secondary-header-box {
+        margin: 10rem auto 0;
+        width: 80vw;
+    }
+}
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1000px) {
+    .secondary-header-box {
+        margin: 7.5rem auto 0;
+        width: 85vw;
+    }
+}
+
+
+@media only screen and (max-width: 778px) {
     .secondary-header-box {
         margin: 5rem auto 0;
         width: 90vw;
     }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1600px) {
+    .secondary-heading {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .secondary-heading {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 778px) {
     .secondary-heading {
         font-size: 2rem;
     }
