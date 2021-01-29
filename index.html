@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light navbar-expand-lg sticky-top justify-content-center">
+    <nav id="nav" class="navbar navbar-light bg-light navbar-expand-lg sticky-top justify-content-center">
         <a class="mr-sm-5" href="index.html">
             <img src="assets/images/CroppedLogo.jpg" id="logo" width="200px" height="60px" alt="TripAway.com">
         </a>
@@ -31,12 +31,12 @@
             </button>
         </div>
         <div class="navbar-collapse collapse w-100 text-center" id="nav-collapse">
-            <div class="ml-sm-5 d-inline-block">
-                Find Your Next Big Break!
-            </div>
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Hot Deals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Popular Destinations</a>
@@ -45,58 +45,43 @@
         </div>
     </nav>
 
+    <!--Landing page background and headings-->
     <div id="beach-container" class="container-fluid beach">
         <div class="row">
             <div class="col">
                 <div class="header-box text-center">
                     <h1 class="uppercase main-header">Trip Away</h1>
-                </div>
-            </div>
-            <div class="col">
-                <div class="secondary-header-box text-center">
-                    <h3 class="secondary-heading uppercase">Find your favourite holiday destination</h3>
+
+                    <hr>
+
+                    <h3 class="secondary-header uppercase">Find your favourite holiday destination</h3>
                 </div>
             </div>
         </div>
+
+        <!--Destination search box and text-->
         <div class="row">
-            <div class="col text-center landing-page-buttons">
-                <a href=""><button>Hot Deals</button></a>
-                <a href="#destination-search-header"><button>Search for a location</button></a>
-                <a href="#"><button>Popular locations</button></a>
+            <div class="col text-center">
+                <p class="white">Search for hotels in..
+                    <span>
+                        <input id="autocomplete" placeholder="Enter a city" type="text" />
+                        <button>Search</button>
+                    </span>
+                </p>
             </div>
         </div>
+
+        <!--Down arrow linking to next section of page-->
         <div class="down-arrow-container d-flex">
             <div class="bottom-arrow ml-auto p-2"><a href="#destination-search-header"><i id="down-arrow"
                         class="fas fa-caret-square-down"></i></a></div>
         </div>
     </div>
 
-    <section>
-        <h2 id="destination-search-header" class="text-center">Have a destination in mind?</h2>
-        <h3 class="text-center">Search for it below!</h3>
+    <!--Map-->
+    <div id="map">
 
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col text-center">
-                    <form class="d-flex destination-search-form">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <div id="map"></div>
-                    <div id="right-panel">
-                        <h2>Results</h2>
-                        <ul id="places"></ul>
-                        <button id="more">More results</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <footer class="text-center">
         <div class="socials-icons">
