@@ -75,8 +75,11 @@
     width: 50vw;
 }
 
+/*Popular locations*/
 
-
+.slide-img {
+    max-width: 200px;
+}
 /*Footer*/
 .socials-icons {
     margin-left: 3rem;
