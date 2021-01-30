@@ -72,7 +72,10 @@
 /*map*/
 #map {
     height: 75vh;
+    width: 50vw;
 }
+
+
 
 /*Footer*/
 .socials-icons {

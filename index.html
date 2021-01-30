@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Milestone Project 2</title>
-    <script src="assets/scripts/jquery.js">
-    </script>
     <script src="assets/scripts/script.js"></script>
     <script src="assets/scripts/map.js"></script>
     <script defer
@@ -21,15 +19,20 @@
 </head>
 
 <body>
+    <!--Navabar-->
     <nav id="nav" class="navbar navbar-light bg-light navbar-expand-lg sticky-top justify-content-center">
         <a class="mr-sm-5" href="index.html">
             <img src="assets/images/CroppedLogo.jpg" id="logo" width="200px" height="60px" alt="TripAway.com">
         </a>
+
+        <!--Navbar collapse button-->
         <div id="nav-collapse-button">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
+
+        <!--links collapsed into collapse button on smaller devices-->
         <div class="navbar-collapse collapse w-100 text-center" id="nav-collapse">
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                 <li class="nav-item">
@@ -39,7 +42,7 @@
                     <a class="nav-link" href="#"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Popular Destinations</a>
+                    <a class="nav-link" href="#">Popular Attractions</a>
                 </li>
             </ul>
         </div>
@@ -54,7 +57,7 @@
 
                     <hr>
 
-                    <h3 class="secondary-header uppercase">Find your favourite holiday destination</h3>
+                    <h3 class="secondary-header uppercase">Plan your dream holiday today!</h3>
                 </div>
             </div>
         </div>
@@ -62,7 +65,12 @@
         <!--Destination search box and text-->
         <div class="row">
             <div class="col text-center">
-                <p class="white">Search for hotels in..
+                <p class="white">Search for
+                    <select id="type">
+                        <option value="hotels">Hotels</option>
+                        <option value="attractions">Attractions</option>
+                        <option value="restaurantBar">Restaurants / Bars</option>
+                    </select>
                     <span>
                         <input id="autocomplete" placeholder="Enter a city" type="text" />
                         <button>Search</button>
@@ -80,8 +88,41 @@
 
     <!--Map-->
     <div id="map">
-
     </div>
+
+    <div id="listing">
+        <table id="resultsTable">
+            <tbody id="results"></tbody>
+        </table>
+    </div>
+
+    <div style="display: none">
+        <div id="info-content">
+            <table>
+                <tr id="iw-url-row" class="iw_table_row">
+                    <td id="iw-icon" class="iw_table_icon"></td>
+                    <td id="iw-url"></td>
+                </tr>
+                <tr id="iw-address-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Address:</td>
+                    <td id="iw-address"></td>
+                </tr>
+                <tr id="iw-phone-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Telephone:</td>
+                    <td id="iw-phone"></td>
+                </tr>
+                <tr id="iw-rating-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Rating:</td>
+                    <td id="iw-rating"></td>
+                </tr>
+                <tr id="iw-website-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Website:</td>
+                    <td id="iw-website"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
 
     <footer class="text-center">
         <div class="socials-icons">
