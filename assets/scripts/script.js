@@ -19,5 +19,7 @@ function slideshow(n) {
     if (slides.length == 0) {
         slides[Index].style.display = "block";
     }
+    else {
     slides[Index - 1].style.display = "block";
+    }
 }
