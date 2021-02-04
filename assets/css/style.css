@@ -11,13 +11,18 @@ body {
     color: #fff;
 }
 
+/*Nav*/
 #nav {
     padding: 0!important;
     background-color: #fff;
 }
 
-.nav-link {
-    color: #0685da;
+.nav-item .nav-link {
+    color: #0685da!important;
+}
+
+.nav-item .nav-link:hover {
+    color: #0e4061!important;
 }
 
 /*Landing page background section*/
@@ -55,6 +60,7 @@ body {
     margin-bottom: 4rem;
 }
 
+/*Down arrow*/
 .down-arrow-container {
     width:100px;
     height:100px;
@@ -73,6 +79,7 @@ body {
     font-size: 2rem!important;
 }
 
+/*Autocomplete search form*/
 #autocomplete {
     margin: 4rem auto;
     width: 40vw;
