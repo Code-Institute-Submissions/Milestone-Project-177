@@ -51,6 +51,8 @@ function onPlaceChanged() {
 }
 
 function search() {
+    document.getElementById("map").style.display = "block";
+    document.getElementById("listing").style.display = "block";
     const search = {
         bounds: map.getBounds(),
         types: ["lodging"],
@@ -83,7 +85,9 @@ function search() {
 }
 
 function attractionsSearch() {
-        const search = {
+    document.getElementById("map").style.display = "block";
+    document.getElementById("listing").style.display = "block";
+    const search = {
         bounds: map.getBounds(),
         types: ["tourist_attraction"],
     };
@@ -115,7 +119,9 @@ function attractionsSearch() {
 }
 
 function restaurantBarSearch() {
-        const search = {
+    document.getElementById("map").style.display = "block";
+    document.getElementById("listing").style.display = "block";
+    const search = {
         bounds: map.getBounds(),
         types: ["restaurant", "bar"],
     };

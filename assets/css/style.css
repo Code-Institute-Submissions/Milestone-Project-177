@@ -161,10 +161,17 @@ body {
 
 /*map*/
 #map {
+    display: none;
     margin-top: 1rem;
     height: 75vh;
-
 }
+
+#listing {
+    display: none;
+    height: 75vh;
+    overflow: scroll;
+}
+
 
 /*Popular locations*/
 .slideshow-container { 
