@@ -52,12 +52,74 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+@media only screen and (max-width: 400px) {
+    .main-header {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .main-header {
+        font-size: 3rem;
+    }
+}
+
 .secondary-header {
     padding-bottom: 2rem;
     color: #0685da;
     font-size: 2rem;
     letter-spacing: 4px;
     margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 400px) {
+    .secondary-header {
+        font-size: 1rem;
+    }
+}
+
+/*Autocomplete search form*/
+#destination-search {
+    padding: 0!important;
+    margin: 0.5rem;
+    text-align: center;
+    color: #0685da;
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 320px) {
+    #destination-search {
+        padding-top: 0.4rem;
+        margin: 0.4rem;
+    }
+}
+
+.search {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#type {
+    width: 20vw;
+    color: #0685da;
+}
+
+@media only screen and (max-width: 320px) {
+        #type {
+        width: 25vw;
+    }
+}
+
+#autocomplete {
+    margin: 0 auto;
+    width: 40vw;
+}
+
+@media only screen and (max-width: 280px) {
+    #autocomplete {
+        width: 35vw;
+    }
 }
 
 /*Down arrow*/
@@ -77,18 +139,6 @@ body {
 #down-arrow {
     color: #fff;
     font-size: 2rem!important;
-}
-
-/*Autocomplete search form*/
-#autocomplete {
-    margin: 4rem auto;
-    width: 40vw;
-}
-
-@media only screen and (max-width: 1000px) {
-    #autocomplete {
-        width: 30vw;
-    }
 }
 
 /*map*/

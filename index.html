@@ -65,17 +65,17 @@
 
         <!--Destination search box and text-->
         <div class="row">
-            <div class="col text-center">
-                <p class="white">Search for
+            <div class="col" id="destination-search">
+                <p class="search">Search for
+                    <!--Drop down box for users to select which type of place they are looking for-->
                     <select id="type">
                         <option value="hotels">Hotels</option>
                         <option value="attractions">Attractions</option>
                         <option value="restaurantBar">Restaurants / Bars</option>
                     </select>
-                    <span>
-                        <input id="autocomplete" placeholder="Enter a city" type="text" />
-                        <button>Search</button>
-                    </span>
+                    in
+                    <!--Search form linked up to google maps map-->
+                    <input id="autocomplete" placeholder="Enter a city" type="text" />
                 </p>
             </div>
         </div>
