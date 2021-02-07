@@ -11,6 +11,18 @@ body {
     color: #fff;
 }
 
+.blue {
+    color: #0685da;
+}
+
+.padding-bottom-1 {
+    padding-bottom: 1rem;
+}
+
+.margin-bottom-2 {
+    margin-bottom: 1rem;
+}
+
 /*Nav*/
 #nav {
     padding: 0!important;
@@ -65,11 +77,10 @@ body {
 }
 
 .secondary-header {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     color: #0685da;
     font-size: 2rem;
     letter-spacing: 4px;
-    margin-bottom: 4rem;
 }
 
 @media only screen and (max-width: 400px) {
@@ -81,11 +92,17 @@ body {
 /*Autocomplete search form*/
 #destination-search {
     padding: 0!important;
-    margin: 0.5rem;
+    margin: 2rem;
     text-align: center;
     color: #0685da;
     background-color: #fff;
     opacity: 0.8;
+}
+
+@media only screen and (max-width: 420px) {
+    #destination-search {
+        margin: 3rem 1rem 1rem;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -114,6 +131,7 @@ body {
 #autocomplete {
     margin: 0 auto;
     width: 40vw;
+    color: #0685da;
 }
 
 @media only screen and (max-width: 280px) {

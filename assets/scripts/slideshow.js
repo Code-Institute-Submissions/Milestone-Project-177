@@ -11,8 +11,8 @@ function slides(n) {
 function slideshow(n) {
     var i;
     var slides = document.getElementsByClassName("slide");
-    if (n > slides.length) { Index = 1 }
-    if (n < 1) { Index = slides.length }
+    if (n > slides.length) { Index = 1; }
+    if (n < 1) { Index = slides.length; }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
@@ -20,6 +20,6 @@ function slideshow(n) {
         slides[Index].style.display = "block";
     }
     else {
-    slides[Index - 1].style.display = "block";
+        slides[Index - 1].style.display = "block";
     }
 }
