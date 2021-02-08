@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Milestone Project 2</title>
+    <script src="assets/scripts/moreless.js"></script>
     <script defer src="assets/scripts/slideshow.js"></script>
     <script src="assets/scripts/map.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
@@ -98,38 +99,36 @@
             <div class="col-sm-12 col-xl-6">
                 <div id="map"></div>
             </div>
-            <div class="col-sm-12 col-xl-6 results-container">
-                <div id="listing">
-                    <table id="resultsTable">
-                        <tbody id="results"></tbody>
-                    </table>
-                </div>
+            <div id="listing">
+                <table id="resultsTable">
+                    <tbody id="results"></tbody>
+                </table>
+            </div>
 
-                <div style="display: none">
-                    <div id="info-content">
-                        <table>
-                            <tr id="iw-url-row" class="iw_table_row">
-                                <td id="iw-icon" class="iw_table_icon"></td>
-                                <td id="iw-url"></td>
-                            </tr>
-                            <tr id="iw-address-row" class="iw_table_row">
-                                <td class="iw_attribute_name">Address:</td>
-                                <td id="iw-address"></td>
-                            </tr>
-                            <tr id="iw-phone-row" class="iw_table_row">
-                                <td class="iw_attribute_name">Telephone:</td>
-                                <td id="iw-phone"></td>
-                            </tr>
-                            <tr id="iw-rating-row" class="iw_table_row">
-                                <td class="iw_attribute_name">Rating:</td>
-                                <td id="iw-rating"></td>
-                            </tr>
-                            <tr id="iw-website-row" class="iw_table_row">
-                                <td class="iw_attribute_name">Website:</td>
-                                <td id="iw-website"></td>
-                            </tr>
-                        </table>
-                    </div>
+            <div style="display: none">
+                <div id="info-content">
+                    <table>
+                        <tr id="iw-url-row" class="iw_table_row">
+                            <td id="iw-icon" class="iw_table_icon"></td>
+                            <td id="iw-url"></td>
+                        </tr>
+                        <tr id="iw-address-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Address:</td>
+                            <td id="iw-address"></td>
+                        </tr>
+                        <tr id="iw-phone-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Telephone:</td>
+                            <td id="iw-phone"></td>
+                        </tr>
+                        <tr id="iw-rating-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Rating:</td>
+                            <td id="iw-rating"></td>
+                        </tr>
+                        <tr id="iw-website-row" class="iw_table_row">
+                            <td class="iw_attribute_name">Website:</td>
+                            <td><a id="iw-website"></a></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -152,51 +151,138 @@
                         !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
                     </script>
                 </div>
-                <img class="slide-img" src="assets/images/Barcelona.jpg" alt="location-1-img">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-xl-6">
+                            <img class="slide-img" src="assets/images/Barcelona.jpg" alt="location-1-img">
+                        </div>
+                        <div class="col-sm-12 col-xl-6">
+                            <div class="location-info">
+                                <h4>About Barcelona</h4>
+
+                                <p>
+                                    Barcelona was the 20th-most-visited city in the world by international visitors and
+                                    the fifth most visited city in Europe after London, Paris, Istanbul and Rome, with
+                                    5.5 million international visitors in 2011. By 2015, both Prague and Milan had
+                                    more international visitors. With its Rambles, Barcelona is ranked the most
+                                    popular city to visit in Spain.
+                                    <span id="ellipsis">...</span><span id="more">
+                                        <br>
+                                        Barcelona as internationally renowned a tourist destination, with numerous
+                                        recreational areas, one of the best beaches in the world, mild and warm
+                                        climate, historical monuments, including eight UNESCO World Heritage Sites, 519
+                                        hotels as of March 2016 including 35 five star hotels, and developed
+                                        tourist infrastructure.
+                                    </span>
+                                </p>
+
+                                <button id="moreLessButton" onclick="moreLess()">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="slide">
                 <h3 class="destination-header text-center">Paris</h3>
                 <!--Weather Widget-->
-                <a class="weatherwidget-io" href="https://forecast7.com/en/48d862d35/paris/" data-label_1="PARIS"
-                    data-label_2="WEATHER" data-theme="pure">PARIS WEATHER</a>
-                <script>
-                    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-                </script>
-                <img class="slide-img" src="assets/images/Paris.jpg" alt="location-2-img">
+                <div>
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/48d862d35/paris/" data-label_1="PARIS"
+                        data-label_2="WEATHER" data-theme="pure">PARIS WEATHER</a>
+                    <script>
+                        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                    </script>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-xl-6">
+                            <img class="slide-img" src="assets/images/Paris.jpg" alt="location-2-img">
+                        </div>
+                        <div class="col-sm-12 col-xl-6">
+                            <div class="location-info">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="slide">
                 <h3 class="destination-header text-center">Lisbon</h3>
                 <!--Weather Widget-->
-                <a class="weatherwidget-io" href="https://forecast7.com/en/38d72n9d14/lisbon/" data-label_1="LISBON"
-                    data-label_2="WEATHER" data-theme="pure">LISBON WEATHER</a>
-                <script>
-                    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-                </script>
-                <img class="slide-img" src="assets/images/Lisbon.jpg" alt="location-3-img">
+                <div>
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/38d72n9d14/lisbon/" data-label_1="LISBON"
+                        data-label_2="WEATHER" data-theme="pure">LISBON WEATHER</a>
+                    <script>
+                        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                    </script>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-xl-6">
+                            <img class="slide-img" src="assets/images/Lisbon.jpg" alt="location-3-img">
+                        </div>
+                        <div class="col-sm-12 col-xl-6">
+                            <div class="location-info">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="slide">
                 <h3 class="destination-header text-center">Dubrovnik</h3>
                 <!--Weather Widget-->
-                <a class="weatherwidget-io" href="https://forecast7.com/en/42d6518d09/dubrovnik/"
-                    data-label_1="DUBROVNIK" data-label_2="WEATHER" data-theme="pure">DUBROVNIK WEATHER</a>
-                <script>
-                    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-                </script>
-                <img class="slide-img" src="assets/images/Dubrovnik.jpg" alt="location-4-img">
+                <div>
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/42d6518d09/dubrovnik/"
+                        data-label_1="DUBROVNIK" data-label_2="WEATHER" data-theme="pure">DUBROVNIK WEATHER</a>
+                    <script>
+                        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                    </script>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-xl-6">
+                            <img class="slide-img" src="assets/images/Dubrovnik.jpg" alt="location-4-img">
+                        </div>
+                        <div class="col-sm-12 col-xl-6">
+                            <div class="location-info">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="slide">
                 <h3 class="destination-header text-center">Santorini</h3>
                 <!--Weather Widget-->
-                <a class="weatherwidget-io" href="https://forecast7.com/en/36d4225d43/thera/" data-label_1="SANTORINI"
-                    data-label_2="WEATHER" data-theme="pure">SANTORINI WEATHER</a>
-                <script>
-                    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-                </script>
-                <img class="slide-img" src="assets/images/santorini.jpg" alt="location-5-img">
+                <div>
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/36d4225d43/thera/"
+                        data-label_1="SANTORINI" data-label_2="WEATHER" data-theme="pure">SANTORINI WEATHER</a>
+                    <script>
+                        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                    </script>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-xl-6">
+                            <img class="slide-img" src="assets/images/santorini.jpg" alt="location-5-img">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="location-info">
+                            
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!--buttons-->

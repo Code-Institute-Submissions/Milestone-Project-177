@@ -28,6 +28,8 @@ function initMap() {
     autocomplete.addListener("place_changed", onPlaceChanged);
 }
 
+
+
 function onPlaceChanged() {
     const place = autocomplete.getPlace();
     const type = document.getElementById("type").value;
@@ -35,6 +37,7 @@ function onPlaceChanged() {
     if (place.geometry) {
         map.panTo(place.geometry.location);
         map.setZoom(15);
+
         if (type == "hotels") {
             search();
         }
@@ -51,8 +54,7 @@ function onPlaceChanged() {
 }
 
 function search() {
-    document.getElementById("map").style.display = "block";
-    document.getElementById("listing").style.display = "block";
+    //Search
     const search = {
         bounds: map.getBounds(),
         types: ["lodging"],
@@ -85,6 +87,7 @@ function search() {
 }
 
 function attractionsSearch() {
+    //Shows map
     document.getElementById("map").style.display = "block";
     document.getElementById("listing").style.display = "block";
     const search = {
@@ -119,6 +122,7 @@ function attractionsSearch() {
 }
 
 function restaurantBarSearch() {
+    //Shows map
     document.getElementById("map").style.display = "block";
     document.getElementById("listing").style.display = "block";
     const search = {
@@ -151,8 +155,6 @@ function restaurantBarSearch() {
         }
     });
 }
-
-
 
 function clearMarkers() {
     for (let i = 0; i < markers.length; i++) {
@@ -262,6 +264,7 @@ function buildIWContent(place) {
         }
         document.getElementById("iw-website-row").style.display = "";
         document.getElementById("iw-website").textContent = website;
+        document.getElementById("iw-website").setAttribute('target', '_blank'); 
     } else {
         document.getElementById("iw-website-row").style.display = "none";
     }
