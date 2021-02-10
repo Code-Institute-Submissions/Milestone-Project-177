@@ -31,10 +31,13 @@ function initMap() {
 function onPlaceChanged() {
     const place = autocomplete.getPlace();
     const type = document.getElementById("type").value;
+    var element = document.getElementById("map");
+
+    element.scrollIntoView(false);
 
     if (place.geometry) {
         map.panTo(place.geometry.location);
-        map.setZoom(15);
+        map.setZoom(13);
 
         if (type == "hotels") {
             search();

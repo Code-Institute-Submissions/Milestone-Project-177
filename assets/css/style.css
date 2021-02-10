@@ -172,15 +172,19 @@ body {
 
 /*map*/
 #map {
-    display: none;
     margin-top: 1rem;
     height: 75vh;
 }
 
-#listing {
-    display: none;
+#listing, #resultsTable {
     height: 40vh;
+    width: 50%;
     overflow-y: scroll;
+}
+
+#results {
+    height: 40vh;
+    width: 50%;
 }
 
 /*end of map*/
@@ -216,11 +220,25 @@ body {
 
 /*location summary*/
 .location-summary {
+    text-align: center;
     color: #da5b06;
 }
 
-#more {
-    display: none;
+@media only screen and (max-width: 768px) {
+    #more {
+        display: none;
+    }
+}
+
+
+.more-less-button {
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .more-less-button, #ellipsis {
+        display: none;
+    }
 }
 
 .attractions-barca {

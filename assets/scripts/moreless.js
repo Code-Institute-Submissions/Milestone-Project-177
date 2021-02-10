@@ -1,7 +1,7 @@
 function moreLess() {
-    var ellipsis = document.getElementById("ellipsis");
-    var more = document.getElementById("more");
-    var button = document.getElementById("moreLessButton");
+    var ellipsis = document.getElementById("ellipsis"); //dots
+    var more = document.getElementById("more"); //section which is toggled
+    var button = document.getElementById("moreLessButton"); //more/less button
 
     if (ellipsis.style.display === "none") {
         ellipsis.style.display = "inline";
