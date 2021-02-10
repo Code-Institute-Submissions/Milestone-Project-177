@@ -28,8 +28,6 @@ function initMap() {
     autocomplete.addListener("place_changed", onPlaceChanged);
 }
 
-
-
 function onPlaceChanged() {
     const place = autocomplete.getPlace();
     const type = document.getElementById("type").value;
@@ -54,7 +52,6 @@ function onPlaceChanged() {
 }
 
 function search() {
-    //Search
     const search = {
         bounds: map.getBounds(),
         types: ["lodging"],
@@ -87,9 +84,6 @@ function search() {
 }
 
 function attractionsSearch() {
-    //Shows map
-    document.getElementById("map").style.display = "block";
-    document.getElementById("listing").style.display = "block";
     const search = {
         bounds: map.getBounds(),
         types: ["tourist_attraction"],
@@ -123,8 +117,6 @@ function attractionsSearch() {
 
 function restaurantBarSearch() {
     //Shows map
-    document.getElementById("map").style.display = "block";
-    document.getElementById("listing").style.display = "block";
     const search = {
         bounds: map.getBounds(),
         types: ["restaurant", "bar"],

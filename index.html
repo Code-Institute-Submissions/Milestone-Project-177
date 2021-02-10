@@ -141,8 +141,9 @@
 
         <!--slides-->
         <div class="slides-wrapper">
+            <!--Barcelona-->
             <div class="slide">
-                <h3 class="destination-header text-center">Barcelona</h3>
+                <h3 class="destination-header text-center uppercase">Barcelona</h3>
                 <!--Weather Widget-->
                 <div>
                     <a class="weatherwidget-io" href="https://forecast7.com/en/41d392d17/barcelona/"
@@ -153,37 +154,63 @@
                 </div>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-12 col-xl-6">
+                        <!--Image of Barcelona-->
+                        <div class="col-sm-12 col-xl-6 slide-img-container">
                             <img class="slide-img" src="assets/images/Barcelona.jpg" alt="location-1-img">
                         </div>
+
                         <div class="col-sm-12 col-xl-6">
+                            <!--Info about Barcelona-->
                             <div class="location-info">
-                                <h4>About Barcelona</h4>
+                                <div class="location-summary">
+                                    <h4 class="uppercase text-center">About Barcelona</h4>
 
-                                <p>
-                                    Barcelona was the 20th-most-visited city in the world by international visitors and
-                                    the fifth most visited city in Europe after London, Paris, Istanbul and Rome, with
-                                    5.5 million international visitors in 2011. By 2015, both Prague and Milan had
-                                    more international visitors. With its Rambles, Barcelona is ranked the most
-                                    popular city to visit in Spain.
-                                    <span id="ellipsis">...</span><span id="more">
-                                        <br>
-                                        Barcelona as internationally renowned a tourist destination, with numerous
-                                        recreational areas, one of the best beaches in the world, mild and warm
-                                        climate, historical monuments, including eight UNESCO World Heritage Sites, 519
-                                        hotels as of March 2016 including 35 five star hotels, and developed
-                                        tourist infrastructure.
-                                    </span>
-                                </p>
+                                    <p>
+                                        Barcelona was the 20th-most-visited city in the world by international visitors
+                                        and
+                                        the fifth most visited city in Europe after London, Paris, Istanbul and Rome,
+                                        with
+                                        5.5 million international visitors in 2011. By 2015, both Prague and Milan had
+                                        more international visitors. With its Rambles, Barcelona is ranked the most
+                                        popular city to visit in Spain.
+                                        <span id="ellipsis">...</span>
+                                        <!--Hidden by default-->
+                                        <span id="more">
+                                            Barcelona as internationally renowned a tourist destination, with numerous
+                                            recreational areas, one of the best beaches in the world, mild and warm
+                                            climate, historical monuments, including eight UNESCO World Heritage Sites,
+                                            519
+                                            hotels as of March 2016 including 35 five star hotels, and developed
+                                            tourist infrastructure.
+                                        </span>
+                                    </p>
 
-                                <button id="moreLessButton" onclick="moreLess()">Read More</button>
+                                    <!--Read More/Less-->
+                                    <button class="more-less-button" id="moreLessButton" onclick="moreLess()">Read
+                                        more</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
+                    <div class="row">
+                        <!--Attractions in Barcelona-->
+                        <div class="col attractions-barca">
+                            <h4>Things to do in Barcelona</h4>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maxime cum omnis eaque
+                                mollitia suscipit accusantium odit maiores sapiente praesentium. Doloribus dolores
+                                tempore
+                                fugiat deserunt quia ad expedita nemo odio.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            <!--Paris-->
             <div class="slide">
                 <h3 class="destination-header text-center">Paris</h3>
                 <!--Weather Widget-->
@@ -202,13 +229,14 @@
                         </div>
                         <div class="col-sm-12 col-xl-6">
                             <div class="location-info">
-                                
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!--Lisbon-->
             <div class="slide">
                 <h3 class="destination-header text-center">Lisbon</h3>
                 <!--Weather Widget-->
@@ -227,13 +255,14 @@
                         </div>
                         <div class="col-sm-12 col-xl-6">
                             <div class="location-info">
-                                
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!--Dubrovnik-->
             <div class="slide">
                 <h3 class="destination-header text-center">Dubrovnik</h3>
                 <!--Weather Widget-->
@@ -252,13 +281,14 @@
                         </div>
                         <div class="col-sm-12 col-xl-6">
                             <div class="location-info">
-                                
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!--Santorini-->
             <div class="slide">
                 <h3 class="destination-header text-center">Santorini</h3>
                 <!--Weather Widget-->
@@ -278,7 +308,7 @@
                     </div>
                     <div class="col-sm-12 col-xl-6">
                         <div class="location-info">
-                            
+
                         </div>
                     </div>
                 </div>
