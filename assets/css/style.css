@@ -262,6 +262,19 @@ body {
     height: 70%;
 }
 
+.tourist-attraction-summary {
+    overflow-y: scroll;
+}
+
+.attractions-buttons {
+    text-align: center;
+
+}
+
+.attractions-buttons a {
+    width: 40%;
+}
+
 /*slide buttons*/
 .left, .right {
     position: absolute;
