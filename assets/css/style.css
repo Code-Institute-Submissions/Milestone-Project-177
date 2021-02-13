@@ -241,8 +241,25 @@ body {
     }
 }
 
-.attractions-barca {
+#moreLessButton {
+    margin-bottom: 1rem;
+}
+
+.attractions {
     color: #0685da;
+}
+
+.barca-attractions-header {
+    text-align: center;
+}
+
+.card {
+    height: 70vh;
+    margin-bottom: 1.5rem;
+}
+
+.card-img-top {
+    height: 70%;
 }
 
 /*slide buttons*/
@@ -254,12 +271,12 @@ body {
 
 .left {
     left: 10px;
-    bottom: 10px;
+    bottom: 50%;
 }
 
 .right {
     right: 10px;
-    bottom: 10px;
+    bottom: 50%;
 }
 /*End of slide buttons*/
 /*End of Popular locations*/
