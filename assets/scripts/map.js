@@ -10,8 +10,8 @@ const hostnameRegexp = new RegExp("^https?://.+?/");
 //Creates map
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 0, lng: 0 },
-        zoom: 2,
+        center: { lat: 37.0194, lng: -7.9304 },
+        zoom: 14,
     });
     //Creates info window
     infoWindow = new google.maps.InfoWindow({
@@ -259,7 +259,7 @@ function buildIWContent(place) {
         }
         document.getElementById("iw-website-row").style.display = "";
         document.getElementById("iw-website").textContent = website;
-        document.getElementById("iw-website").setAttribute('target', '_blank'); 
+        document.getElementById("iw-website").setAttribute('target', '_blank');
     } else {
         document.getElementById("iw-website-row").style.display = "none";
     }

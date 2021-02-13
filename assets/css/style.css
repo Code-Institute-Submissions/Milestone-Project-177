@@ -248,7 +248,6 @@ body {
 /*slide buttons*/
 .left, .right {
     position: absolute;
-    width: 5rem;
     color: #fff;
     background-color: #0685da;
 }

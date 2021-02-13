@@ -88,7 +88,7 @@
 
         <!--Down arrow linking to next section of page-->
         <div class="down-arrow-container d-flex">
-            <div class="bottom-arrow ml-auto p-2"><a href="#destination-search-header"><i id="down-arrow"
+            <div class="bottom-arrow ml-auto p-2"><a href="#map"><i id="down-arrow"
                         class="fas fa-caret-square-down"></i></a></div>
         </div>
     </div>
@@ -322,8 +322,15 @@
             </div>
 
             <!--buttons-->
-            <button class="left" onclick="slides(-1)">previous</button>
-            <button class="right" onclick="slides(1)">Next</button>
+            <!--left button-->
+            <div class="left" onclick="slides(-1)">
+                <i class="fas fa-chevron-circle-left"></i>
+            </div>
+            
+            <!--right button-->
+            <div class="right" onclick="slides(1)">
+                <i class="fas fa-chevron-circle-right"></i>
+            </div>
         </div>
     </div>
 
