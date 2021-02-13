@@ -7,6 +7,11 @@ const MARKER_PATH =
     "https://developers.google.com/maps/documentation/javascript/images/marker_green";
 const hostnameRegexp = new RegExp("^https?://.+?/");
 
+function scrollToMap() {
+    var element = document.getElementById("map");
+    element.scrollIntoView(false);
+}
+
 //Creates map
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
