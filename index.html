@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Milestone Project 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/scripts/scrollspy.js"></script>
     <script src="assets/scripts/moreless.js"></script>
     <script defer src="assets/scripts/slideshow.js"></script>
@@ -42,10 +43,10 @@
                     <a class="nav-link" href="#popular-locations">Popular Locations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Hot Deals</a>
+                    <a class="nav-link" href="#hot-deals">Hot Deals</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Popular Attractions</a>
+                    <a class="nav-link" href="#popular-attractions">Popular Attractions</a>
                 </li>
             </ul>
         </div>
@@ -101,7 +102,8 @@
             <div class="col-12 map-container">
                 <div id="map"></div>
             </div>
-            <div id="listing">
+            <div class="col-12" id="listing">
+                <h4 class="text-center">Results</h4>
                 <table id="resultsTable">
                     <tbody id="results"></tbody>
                 </table>
@@ -176,9 +178,9 @@
                                         5.5 million international visitors in 2011. By 2015, both Prague and Milan had
                                         more international visitors. With its Rambles, Barcelona is ranked the most
                                         popular city to visit in Spain.
-                                        <span id="ellipsis">...</span>
+                                        <span class="ellipsis">...</span>
                                         <!--Hidden by default-->
-                                        <span id="more">
+                                        <span class="more">
                                             Barcelona as internationally renowned a tourist destination, with numerous
                                             recreational areas, one of the best beaches in the world, mild and warm
                                             climate, historical monuments, including eight UNESCO World Heritage Sites,
@@ -189,14 +191,14 @@
                                     </p>
 
                                     <!--Read More/Less-->
-                                    <button class="more-less-button" id="moreLessButton" onclick="moreLess()">Read
+                                    <button class="more-less-button moreLessButton">Read
                                         more</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row attractions">
+                    <div class="row card-container attractions">
                         <!--Attractions in Barcelona-->
                         <div class="col-12">
                             <h4 class="barca-attractions-header">Things to do in Barcelona</h4>

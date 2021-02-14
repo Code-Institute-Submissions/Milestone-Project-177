@@ -15,8 +15,8 @@ function scrollToMap() {
 //Creates map
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 37.0194, lng: -7.9304 },
-        zoom: 14,
+        center: { lat: 0, lng: 0 },
+        zoom: 2,
     });
     //Creates info window
     infoWindow = new google.maps.InfoWindow({
@@ -36,11 +36,9 @@ function initMap() {
 function onPlaceChanged() {
     const place = autocomplete.getPlace();
     const type = document.getElementById("type").value;
-    const listing = document.getElementById("listing");
     var element = document.getElementById("map");
-    element.scrollIntoView(false);
-    
-    
+    element.scrollIntoView();
+
     if (place.geometry) {
         map.panTo(place.geometry.location);
         map.setZoom(13);

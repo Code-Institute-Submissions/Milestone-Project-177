@@ -181,18 +181,22 @@ body {
 /*map*/
 #map {
     margin-top: 1rem;
+    padding-top: 3rem;
     height: 50vh;
 }
 
 #listing, #resultsTable {
     height: 40vh;
+    width: 100vw;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #results {
     height: 40vh;
-    width: 50%;
+    width: 100vw;
 }
+
 
 /*end of map*/
 
@@ -232,7 +236,7 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-    #more {
+    .more {
         display: none;
     }
 }
@@ -243,12 +247,12 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-    .more-less-button, #ellipsis {
+    .more-less-button, .ellipsis {
         display: none;
     }
 }
 
-#moreLessButton {
+.moreLessButton {
     margin-bottom: 1rem;
 }
 
@@ -266,10 +270,11 @@ body {
 }
 
 .card-img-top {
-    height: 70%;
+    height: 60%;
 }
 
 .tourist-attraction-summary {
+    height: 20vh;
     overflow-y: scroll;
 }
 
@@ -283,13 +288,15 @@ body {
 }
 
 .card-container {
-    border: 1px solid #0685da;
-    margin: 1rem;
+    border-top: 1px solid #0685da;
+    margin: 1rem 0.5rem 1rem;
 }
 
 .hotels {
     color: #0685da;
 }
+
+
 
 /*slide buttons*/
 .left, .right {
@@ -309,7 +316,7 @@ body {
 }
 
 .button-container {
-    margin: -1rem auto 0;
+    margin: -0.5rem auto 1rem;
 }
 /*End of slide buttons*/
 /*End of Popular locations*/

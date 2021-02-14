@@ -1,15 +1,16 @@
-function moreLess() {
-    var ellipsis = document.getElementById("ellipsis"); //dots
-    var more = document.getElementById("more"); //section which is toggled
-    var button = document.getElementById("moreLessButton"); //more/less button
+$(document).ready(function() {
+    //on click event handler
+    $(".moreLessButton").click(function() {
+        //toggles the visibility of the more and ellipsis classes on click
+        $(".more").toggle();
+        $(".ellipsis").toggle();
 
-    if (ellipsis.style.display === "none") {
-        ellipsis.style.display = "inline";
-        more.style.display = "none";
-        button.innerHTML = "Read More"
-    } else {
-        ellipsis.style.display = "none";
-        more.style.display = "inline";
-        button.innerHTML = "Read Less"
-    }
-}
+        //Changes text in read more / less button
+        if($(".moreLessButton").text() == "Read Less") {
+            $(".moreLessButton").text("Read More");
+        }
+        else {
+            $(".moreLessButton").text("Read Less");
+        }
+    })
+})
