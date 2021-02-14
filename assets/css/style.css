@@ -150,6 +150,10 @@ body {
     }
 }
 
+#listing {
+    display: none;
+}
+
 /*End of Destination Search*/
 
 /*Down arrow*/
@@ -177,12 +181,11 @@ body {
 /*map*/
 #map {
     margin-top: 1rem;
-    height: 75vh;
+    height: 50vh;
 }
 
 #listing, #resultsTable {
     height: 40vh;
-    width: 50%;
     overflow-y: scroll;
 }
 
@@ -277,6 +280,15 @@ body {
 
 .attractions-buttons a {
     width: 40%;
+}
+
+.card-container {
+    border: 1px solid #0685da;
+    margin: 1rem;
+}
+
+.hotels {
+    color: #0685da;
 }
 
 /*slide buttons*/

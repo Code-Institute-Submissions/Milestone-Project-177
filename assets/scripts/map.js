@@ -36,13 +36,15 @@ function initMap() {
 function onPlaceChanged() {
     const place = autocomplete.getPlace();
     const type = document.getElementById("type").value;
+    const listing = document.getElementById("listing");
     var element = document.getElementById("map");
-
     element.scrollIntoView(false);
-
+    
+    
     if (place.geometry) {
         map.panTo(place.geometry.location);
         map.setZoom(13);
+        listing.style.display = "block";
 
         if (type == "hotels") {
             search();
