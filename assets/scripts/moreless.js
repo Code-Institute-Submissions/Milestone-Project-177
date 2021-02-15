@@ -1,15 +1,13 @@
-$(document).ready(function () {
-    $(".moreLessButton").each(function(i){
-        $(this).click(function() {
-            $(".more").toggle();
-            $(".ellipsis").toggle();
+$(document).ready(function() {
+    $(".moreLessButton").click(function() {
+        $(this).prev().toggle();
+        $(this).siblings(".ellipsis").toggle();
 
-            if ($(".moreLessButton").text() == "Read More") {
-                $(".moreLessButton").text("Read Less");
-            }
-            else {
-                $(".moreLessButton").text("Read More");
-            }
-        })
+        if($(this).text()=="Read More"){
+            $(this).text("Read Less");
+        }
+        else if($(this).text()=="Read Less"){
+            $(this).text("Read More");
+        }
     })
 })
