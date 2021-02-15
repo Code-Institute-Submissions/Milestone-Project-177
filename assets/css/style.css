@@ -1,4 +1,6 @@
 /*General Styles*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
     max-width: 100vw;
 }
@@ -26,16 +28,26 @@ body {
 .active {
     color: #0e4061!important;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+h5 {
+    text-align: center;
+}
 /*End of General Style*/
 
 /*Nav*/
 #nav {
     padding: 0!important;
     background-color: #fff;
+    font-weight: 600;
 }
 
 .nav-item .nav-link {
     color: #0685da!important;
+    text-transform: uppercase;
 }
 
 .nav-item .nav-link:hover {
@@ -182,7 +194,7 @@ body {
 #map {
     margin-top: 1rem;
     padding-top: 3rem;
-    height: 50vh;
+    height: 60vh;
 }
 
 #listing, #resultsTable {
@@ -201,12 +213,22 @@ body {
 /*end of map*/
 
 /*Popular locations*/
+#popular-locations {
+    border: 1px solid #0685da;
+    margin: 1rem;
+}
+
+#popular-location-header {
+    margin-top: 1rem!important;
+    margin-bottom: 0!important;
+}
+
 .slideshow-container { 
     position: relative;
 }
 
 .slides-wrapper {
-    padding: 5px;
+    padding: 0px 5px 5px;
 }
 
 #popular-locations-header {
@@ -235,25 +257,25 @@ body {
     color: #da5b06;
 }
 
+.location-summary-text {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
 @media only screen and (max-width: 768px) {
     .more {
         display: none;
     }
 }
 
-
-.more-less-button {
-    margin: 0 auto;
-}
-
 @media only screen and (min-width: 768px) {
-    .more-less-button, .ellipsis {
+    .moreLessButton, .ellipsis {
         display: none;
     }
 }
 
 .moreLessButton {
-    margin-bottom: 1rem;
+    margin: 0.5rem auto 1rem;
 }
 
 .attractions {
@@ -262,11 +284,12 @@ body {
 
 .barca-attractions-header {
     text-align: center;
+    margin-top: 1rem;
 }
 
 .card {
-    height: 70vh;
-    margin-bottom: 1.5rem;
+    height: 65vh;
+    margin-bottom: 0.5rem;
 }
 
 .card-img-top {
@@ -288,35 +311,59 @@ body {
 }
 
 .card-container {
-    border-top: 1px solid #0685da;
-    margin: 1rem 0.5rem 1rem;
+    border: 1px solid #0685da;
+    margin: 1.5rem 0.5rem;
+}
+
+.barca-hotels {
+    margin-top: 1rem;
 }
 
 .hotels {
     color: #0685da;
 }
 
-
-
 /*slide buttons*/
-.left, .right {
+.left-bottom, .right-bottom {
     position: absolute;
-    color: #fff;
-    background-color: #0685da;
+    color: #0685da;
 }
 
-.left {
+.left-top, .right-top {
+    position: absolute;
+    color: #0685da;
+}
+
+.left-bottom {
     left: 10px;
-    bottom: 50%;
+    bottom: 3%;
+    font-size: 1.5rem;
+    border-radius: 10%;
 }
 
-.right {
+.left-top {
+    left: 10px;
+    top: 3%;
+    font-size: 1.5rem;
+    border-radius: 10%;
+}
+
+.right-bottom {
     right: 10px;
-    bottom: 50%;
+    bottom: 3%;
+    font-size: 1.5rem;
+    border-radius: 10%;
+}
+
+.right-top {
+    right: 10px;
+    top: 3%;
+    font-size: 1.5rem;
+    border-radius: 10%;
 }
 
 .button-container {
-    margin: -0.5rem auto 1rem;
+    margin: 0 auto 1rem;
 }
 /*End of slide buttons*/
 /*End of Popular locations*/

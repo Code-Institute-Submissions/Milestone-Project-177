@@ -1,8 +1,10 @@
 $(document).ready(function() {
+    //More / less button click handler
     $(".moreLessButton").click(function() {
-        $(this).prev().toggle();
-        $(this).siblings(".ellipsis").toggle();
+        //hides #more section
+        $(this).prev().prev().toggle();
 
+        //changes inner html of read more / less button
         if($(this).text()=="Read More"){
             $(this).text("Read Less");
         }
