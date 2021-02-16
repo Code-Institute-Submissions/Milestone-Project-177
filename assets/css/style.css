@@ -182,7 +182,7 @@ h5 {
     bottom: 10%;
 }
 
-#down-arrow {
+.down-arrow {
     color: #fff;
     font-size: 2rem!important;
 }
@@ -286,17 +286,17 @@ h5 {
     margin-top: 1rem;
 }
 
-.attractions-summary {
-    color: #da5b06;
-}
-
 .card {
     height: 65vh;
     margin-bottom: 0.5rem;
 }
 
-.card-img-top {
-    height: 60%;
+.hotel-card {
+    height: 85vh;
+}
+
+.hotel-card-img {
+    height: 70%;
 }
 
 .tourist-attraction-summary {
@@ -304,17 +304,13 @@ h5 {
     overflow-y: scroll;
 }
 
-.attraction, .hotel {
-    color: #da5b06;
+.attractions-img {
+    height: 60%;
 }
 
 .attractions-buttons {
     text-align: center;
     margin-bottom: 0.5rem;
-}
-
-.attractions-buttons a {
-    width: 40%;
 }
 
 .card-container {

@@ -8,8 +8,20 @@ const MARKER_PATH =
 const hostnameRegexp = new RegExp("^https?://.+?/");
 
 function scrollToMap() {
+    //Gets Map
     var element = document.getElementById("map");
-    element.scrollIntoView(false);
+    //gets listings 
+    const listings = document.getElementById("listing");
+
+    //Checks if listings are showing
+    if (listings.style.display == "block") {
+        //Scrolls to listings if they are showing
+        listings.scrollIntoView(false);
+    }
+    //If listings aren't showing, scroll to map
+    else {
+        element.scrollIntoView(false);
+    }
 }
 
 //Creates map

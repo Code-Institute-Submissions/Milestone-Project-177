@@ -89,9 +89,9 @@
 
 
         <!--Down arrow linking to next section of page-->
-        <div class="down-arrow-container d-flex">
+        <div class="down-arrow-container">
             <div onclick="scrollToMap()" class="bottom-arrow ml-auto p-2">
-                <i id="down-arrow" class="fas fa-caret-square-down"></i>
+                <i class="down-arrow fas fa-caret-square-down"></i>
             </div>
         </div>
     </div>
@@ -101,6 +101,9 @@
         <div class="row">
             <div class="col-12 map-container">
                 <div id="map"></div>
+                <div class="map-down-arrow">
+
+                </div>
             </div>
             <div class="col-12" id="listing">
                 <h4 class="text-center">Results</h4>
@@ -163,7 +166,15 @@
                     <div class="row">
                         <!--Image of Barcelona-->
                         <div class="col-xs-12 col-xl-6 slide-img-container">
-                            <img class="slide-img" src="assets/images/Barcelona.jpg" alt="location-1-img">
+                            <img class="slide-img" src="assets/images/Barcelona.jpg" alt="Image of Barcelona">
+
+                            <!--Image source-->
+                            <span class="source">
+                                Image by <a
+                                    href="https://pixabay.com/users/dominickvietor-6362547/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5188598">Dominick
+                                    Vietor</a> from <a
+                                    href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5188598">Pixabay</a>
+                            </span>
                         </div>
 
                         <div class="col-xs-12 col-xl-6">
@@ -218,16 +229,22 @@
                                 Barcelona.
                                 It is no surprise that Barcelona is Spain's most popular destination for international
                                 visitors.
-                                <br>
                                 See our top picks of things to do in Barcelona below:
                             </p>
 
                         </div>
 
+                        <!--Basilica of the Sagrada Familia-->
                         <div class="col-xs-12 col-md-6 col-lg-4">
                             <div class="card">
-                                <img class="card-img-top" src="assets/images/BasilicaoftheSagradaFamilia.jpg"
+                                <img class="card-img-top attractions-img"
+                                    src="assets/images/BasilicaoftheSagradaFamilia.jpg"
                                     alt="Basilica of the Sagrada Familia">
+
+                                <span class="source">Image by <a
+                                        href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=918842">Free-Photos</a>
+                                    from <a
+                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=918842">Pixabay</a></span>
 
                                 <h5 class="attraction">Basilica of the Sagrada Familia</h5>
 
@@ -239,7 +256,7 @@
                                 </p>
 
                                 <div class="attractions-buttons">
-                                    <a class="btn btn-primary" target="_blank"
+                                    <a class="btn btn-outline-primary btn-sm" target="_blank"
                                         href="https://www.tripadvisor.co.uk/AttractionProductReview-g187497-d17472264-Sagrada_Familia_Premium_Guided_Tour-Barcelona_Catalonia.html">
                                         Book a tour
                                     </a>
@@ -247,9 +264,18 @@
                             </div>
                         </div>
 
+                        <!--Casa Batllo-->
                         <div class="col-xs-12 col-md-6 col-lg-4">
                             <div class="card">
-                                <img class="card-img-top" src="assets/images/casabatllo.jpg" alt="Casa Batllo">
+                                <img class="card-img-top attractions-img" src="assets/images/casabatllo.jpg"
+                                    alt="Casa Batllo">
+
+                                <span class="source">
+                                    Image by <a
+                                        href="https://pixabay.com/users/xevolution-6299062/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2691031">xevolution</a>
+                                    from <a
+                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2691031">Pixabay</a>
+                                </span>
 
                                 <h5 class="attraction">Casa Batllo</h5>
 
@@ -261,16 +287,25 @@
                                 </p>
 
                                 <div class="attractions-buttons">
-                                    <a class="btn btn-primary" target="_blank"
+                                    <a class="btn btn-outline-primary btn-sm" target="_blank"
                                         href="https://www.tripadvisor.co.uk/AttractionProductReview-g187497-d19150915-Casa_Batllo_private_tour_with_skip_the_line_tickets-Barcelona_Catalonia.html">
                                         Book a tour</a>
                                 </div>
                             </div>
                         </div>
 
+                        <!--Camp Nou-->
                         <div class="col-xs-12 col-md-6 col-lg-4">
                             <div class="card">
-                                <img class="card-img-top" src="assets/images/campnou.jpg" alt="Camp Nou">
+                                <img class="card-img-top attractions-img" src="assets/images/campnou.jpg"
+                                    alt="Camp Nou">
+
+                                <span class="source">
+                                    Image by <a
+                                        href="https://pixabay.com/users/frodecj-470410/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=463349">FrodeCJ</a>
+                                    from <a
+                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=463349">Pixabay</a>
+                                </span>
 
                                 <h5 class="attraction">Camp Nou</h5>
 
@@ -283,12 +318,12 @@
                                 </p>
 
                                 <div class="attractions-buttons">
-                                    <a class="btn btn-primary" target="_blank"
+                                    <a class="btn btn-outline-primary btn-sm" target="_blank"
                                         href="https://www.fcbarcelona.com/en/tickets/camp-nou-experience">
                                         Book a tour
                                     </a>
 
-                                    <a class="btn btn-primary" target="_blank"
+                                    <a class="btn btn-outline-primary btn-sm" target="_blank"
                                         href="https://www.fcbarcelona.com/en/tickets/football">
                                         Book tickets
                                     </a>
@@ -296,7 +331,7 @@
                             </div>
                         </div>
                         <div class="button-container">
-                            <a target="_blank" class="btn btn-primary"
+                            <a target="_blank" class="btn btn-outline-primary btn-sm"
                                 href="https://www.tripadvisor.co.uk/Attractions-g187497-Activities-Barcelona_Catalonia.html">
                                 See More Attractions
                             </a>
@@ -304,7 +339,7 @@
                     </div>
 
 
-
+                    <!--Hotels in Barcelona-->
                     <div class="row hotels card-container">
                         <div class="col-12">
 
@@ -314,8 +349,14 @@
                         </div>
 
                         <div class="col-xs-12 col-lg-6">
-                            <div class="card">
-                                <img class="card-img-top" src="assets/images/hotel-majestic.jpg" alt="Hotel Majestic">
+                            <div class="hotel-card">
+                                <img class="hotel-card-img card-img-top" src="assets/images/hotel-majestic.jpg"
+                                    alt="Hotel Majestic">
+                                Image by <a
+                                    href="https://pixabay.com/users/mariamichelle-165491/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1157570">Michelle
+                                    Maria</a> from <a
+                                    href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1157570">Pixabay</a>
+
 
                                 <h5 class="hotel text-center">Hotel Majestic</h5>
 
@@ -327,15 +368,23 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-lg-6">
-                            <div class="card">
-                                <img class="card-img-top" src="assets/images/OrienteAtiramHotelBarcelona.jpg"
+                            <div class="hotel-card">
+                                <img class="hotel-card-img card-img-top"
+                                    src="assets/images/OrienteAtiramHotelBarcelona.jpg"
                                     alt="Oriente Atiram Hotel Barcelona">
 
+                                <span>
+                                    Image by <a
+                                        href="https://www.istockphoto.com/portfolio/kutredrig?assettype=image&mediatype=photography">Kutredrig</a>
+                                    on <a href="https://www.istockphoto.com/">i stock</a>
+                                </span>
+
                                 <h5 class="text-center hotel">Oriente Atiram Hotel Barcelona</h5>
+
                             </div>
                         </div>
                         <div class="button-container">
-                            <a class="btn btn-primary" target="_blank"
+                            <a class="btn btn-outline-primary btn-sm" target="_blank"
                                 href="https://www.booking.com/city/es/barcelona.html?aid=303948;label=barcelona-uwOWMfBH_Qjc5*1sn8nYtgS392876322157:pl:ta:p12300:p2:ac:ap:neg:fi:tikwd-14453901:lp9046435:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA;ws=&gclid=CjwKCAiAsaOBBhA4EiwAo0_AnKZnSeBCSrt4db9DSuBC2mLuyL72q8rKyU8UKcLr5B1rKnWQ3TyBkBoC9bMQAvD_BwE">See
                                 More Hotels</a>
                         </div>
@@ -345,7 +394,7 @@
 
             <!--Paris-->
             <div class="slide">
-                <h3 class="destination-header text-center">Paris</h3>
+                <h3 class="destination-header text-center">Paris, France</h3>
                 <!--Weather Widget-->
                 <div>
                     <a target="_blank" class="weatherwidget-io" href="https://forecast7.com/en/48d862d35/paris/"
@@ -357,8 +406,13 @@
 
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-xs-12 col-xl-6">
-                            <img class="slide-img" src="assets/images/Paris.jpg" alt="Paris image">
+                        <div class="col-xs-12 col-xl-6 slide-img-container">
+                            <!--Image of Paris-->
+                            <img class="slide-img" src="assets/images/arcDeTriomphe.jpg" alt="Paris image">
+                            Image by <a
+                                href="https://pixabay.com/users/herryway-29985/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=101633">herry
+                                wibisono</a> from <a
+                                href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=101633">Pixabay</a>
                         </div>
                         <div class="col-xs-12 col-xl-6">
                             <!-- Info about Paris -->
@@ -378,9 +432,8 @@
 
                                         <!--Hidden by default-->
                                         <span class="more">
-                                            The City is home to some wonderful architecture and is crammed full of
-                                            culture
-                                            with over 100 museums.
+                                            The City is home to some wonderful architecture and packed with over 100
+                                            museums.
                                             <br>
                                             In 2019 Greater Paris (Paris and it's 3 surrounding Departments) had 2,056
                                             Hotels including 94 5-Star Hotels
@@ -396,111 +449,146 @@
                             </div>
                         </div>
                     </div>
+
+                    <!--Attractions in Paris-->
                     <div class="row card-container attractions">
-                        <!--Attractions in Barcelona-->
                         <div class="col-12">
-                            <h4 class="barca-attractions-header">Things to do in Paris</h4>
+                            <h4 class="paris-attractions-header">Things to do in Paris</h4>
 
                             <p class="text-center">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, error autem! Error
-                                numquam non nulla dolore maxime velit, assumenda facilis, harum molestias ducimus id
-                                aliquam reiciendis asperiores facere labore dolorem.
+                                Paris is undoubtably one of the most stunning cities in the world.
+                                In Paris there is never a lack of things to do or see but we've picked out a few:
                             </p>
 
                         </div>
 
+                        <!--Eiffel Tower-->
                         <div class="col-xs-12 col-md-6 col-lg-4">
                             <div class="card">
-                                <img class="card-img-top" src="assets/images/BasilicaoftheSagradaFamilia.jpg"
-                                    alt="Basilica of the Sagrada Familia">
-
-                                <h5></h5>
+                                <img class="card-img-top attractions-img" src="assets/images/eiffel-tower.jpg"
+                                    alt="Eiffel Tower">
+                                <span class="source">Image by <a
+                                        href="https://pixabay.com/users/thedigitalartist-202249/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3349075">Pete
+                                        Linforth</a> from <a
+                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3349075">Pixabay</a></span>
+                                <h5>Eiffel Tower</h5>
 
                                 <p class="tourist-attraction-summary">
-
+                                    The Eiffel Tower is named after the engineer Gustave Eiffel, whose company designed
+                                    the tower. It is 324 meters high at the tip and has a beautiful view of Paris.
                                 </p>
 
                                 <div class="attractions-buttons">
-                                    <a class="btn btn-primary" target="_blank"
-                                        href="https://www.tripadvisor.co.uk/AttractionProductReview-g187497-d17472264-Sagrada_Familia_Premium_Guided_Tour-Barcelona_Catalonia.html">
-                                        Book a tour
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-md-6 col-lg-4">
-                            <div class="card">
-                                <img class="card-img-top" src="assets/images/casabatllo.jpg" alt="Casa Batllo">
-
-                                <h5></h5>
-
-                                <p class="tourist-attraction-summary">
-
-                                </p>
-
-                                <div class="attractions-buttons">
-                                    <a class="btn btn-primary" target="_blank"
-                                        href="https://www.tripadvisor.co.uk/AttractionProductReview-g187497-d19150915-Casa_Batllo_private_tour_with_skip_the_line_tickets-Barcelona_Catalonia.html">
+                                    <a class="btn btn-outline-primary btn-sm" target="_blank"
+                                        href="//www.getyourguide.com/paris-l16/eiffel-tower-direct-access-with-host-to-summit-by-elevator-cruise-non-cancellable-t394925/">
                                         Book a tour</a>
                                 </div>
                             </div>
                         </div>
 
+                        <!--Paris Catacombs-->
                         <div class="col-xs-12 col-md-6 col-lg-4">
                             <div class="card">
-                                <img class="card-img-top" src="assets/images/campnou.jpg" alt="Camp Nou">
-
-                                <h5></h5>
+                                <img class="card-img-top attractions-img" src="assets/images/catacombs.jpg"
+                                    alt="Paris Catacombs">
+                                <span class="source"> Image by <a
+                                        href="https://pixabay.com/users/annbal-2197203/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2109028">Ann
+                                        B.</a> from <a
+                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2109028">Pixabay</a></span>
+                                <h5>Paris Catacombs</h5>
 
                                 <p class="tourist-attraction-summary">
-
+                                    The Catacombs of Paris lay rest to the remains, stacked floor to ceiling, of around
+                                    6 million people.
+                                    They were placed in old tunnels which have existed since the 13th Century due to the
+                                    overcrowding of graveyards.
                                 </p>
 
                                 <div class="attractions-buttons">
-                                    <a class="btn btn-primary" target="_blank"
-                                        href="https://www.fcbarcelona.com/en/tickets/camp-nou-experience">
-                                        Book a tour
-                                    </a>
+                                    <a class="btn btn-outline-primary btn-sm" target="_blank"
+                                        href="https://www.getyourguide.com/paris-l16/paris-catacombs-tour-t390452/">
+                                        Book a tour</a>
+                                </div>
+                            </div>
+                        </div>
 
-                                    <a class="btn btn-primary" target="_blank"
-                                        href="https://www.fcbarcelona.com/en/tickets/football">
-                                        Book tickets
+                        <!--Louvre Museum-->
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img class="card-img-top attractions-img" src="assets/images/Louvre.jpg"
+                                    alt="Louvre Museum">
+                                <span class="source">Image by <a
+                                        href="https://pixabay.com/users/edinugraha-30562/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=102840">Edi
+                                        Nugraha</a> from <a
+                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=102840">Pixabay</a></span>
+
+                                <h5>Louvre Museum</h5>
+
+                                <p class="tourist-attraction-summary">
+                                    The Louvre holds countless masterpieces attracting tourists from around the world.
+                                    Some of these paintings include The Mona Lisa by Leonardo da Vinci and Vénus de
+                                    Milo.
+                                </p>
+
+                                <div class="attractions-buttons">
+                                    <a class="btn btn-outline-primary btn-sm" target="_blank"
+                                        href="https://www.ticketlouvre.fr/louvre/b2c/index.cfm/home">
+                                        Book a tour
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="button-container">
-                            <a target="_blank" class="btn btn-primary"
+                            <a target="_blank" class="btn btn-outline-primary btn-sm"
                                 href="https://www.tripadvisor.co.uk/Attractions-g187497-Activities-Barcelona_Catalonia.html">
                                 See More Attractions
                             </a>
                         </div>
 
                     </div>
+
+                    <!--Paris Hotels-->
                     <div class="row hotels card-container">
                         <div class="col-12">
                             <h4 class="text-center">Hotels in Paris</h4>
                             <h5>Our Top Picks</h5>
                         </div>
 
-                        <div class="col-xs-12 col-lg-6">
-                            <div class="card">
-                                <img class="card-img-top" src="assets/images/hotel-majestic.jpg" alt="Hotel Majestic">
+                        <div class="col-xs-12 col-6">
+                            <div class="hotel-card">
+                                <img class="card-img-top hotel-card-img"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/8/80/H%C3%B4tel_du_Louvre%2C_Paris%2C_France_-_April_2011.jpg"
+                                    alt="Hotel Du Louvre">
+                                <span>Image <a
+                                        href="https://upload.wikimedia.org/wikipedia/commons/8/80/H%C3%B4tel_du_Louvre%2C_Paris%2C_France_-_April_2011.jpg">source</a></span>
 
-                                <h5></h5>
+
+                                <h5>Hotel Du Louvre</h5>
+
+                                <p>
+
+                                </p>
+
+                                <div class="btn btn-outline-primary btn-sm">
+
+                                </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-lg-6">
-                            <div class="card">
-                                <img class="card-img-top" src="assets/images/OrienteAtiramHotelBarcelona.jpg"
+                            <div class="hotel-card">
+                                <img class="hotel-card-img card-img-top"
+                                    src="assets/images/OrienteAtiramHotelBarcelona.jpg"
                                     alt="Oriente Atiram Hotel Barcelona">
+
+                                <span class="source">Image by <a
+                                        href="https://www.istockphoto.com/portfolio/kutredrig?assettype=image&mediatype=photography">Kutredrig</a>
+                                    on <a href="https://www.istockphoto.com/">istock</a></span>
 
                                 <h5></h5>
                             </div>
                         </div>
                         <div class="button-container">
-                            <a class="btn btn-primary" target="_blank"
+                            <a class="btn btn-outline-primary btn-sm" target="_blank"
                                 href="https://www.booking.com/city/es/barcelona.html?aid=303948;label=barcelona-uwOWMfBH_Qjc5*1sn8nYtgS392876322157:pl:ta:p12300:p2:ac:ap:neg:fi:tikwd-14453901:lp9046435:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA;ws=&gclid=CjwKCAiAsaOBBhA4EiwAo0_AnKZnSeBCSrt4db9DSuBC2mLuyL72q8rKyU8UKcLr5B1rKnWQ3TyBkBoC9bMQAvD_BwE">See
                                 More Hotels</a>
                         </div>
@@ -510,7 +598,7 @@
 
             <!--Lisbon-->
             <div class="slide">
-                <h3 class="destination-header text-center">Lisbon</h3>
+                <h3 class="destination-header text-center">Lisbon, Portugal</h3>
                 <!--Weather Widget-->
                 <div>
                     <a target="_blank" class="weatherwidget-io" href="https://forecast7.com/en/38d72n9d14/lisbon/"
@@ -523,38 +611,140 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-12 col-xl-6">
-                            <img class="slide-img" src="assets/images/Lisbon.jpg" alt="location-3-img">
+                            <div class="slide-img-container">
+                                <img class="slide-img" src="assets/images/Lisbon.jpg" alt="location-3-img">
+
+                                <span class="source">
+                                    Image by <a
+                                        href="https://pixabay.com/users/z0man-6079540/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4820579">Steffen
+                                        Zimmermann</a> from <a
+                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4820579">Pixabay</a>
+                                </span>
+                            </div>
                         </div>
                         <div class="col-xs-12 col-xl-6">
                             <div class="location-info">
+                                <div class="location-summary">
+                                    <h4 class="uppercase">About Lisbon</h4>
 
+                                    <p class="location-summary-text">
+                                        Lisbon is the capital of Portugal and is recognised for it's importance in
+                                        finance, tourism, international trade and arts among many other things.
+                                        <br>
+                                        It has stunning architecture of various styles and an array of museums and arts
+                                        collections.
+                                        <!--Hidden by default-->
+                                        <span class="more">
+                                            Lisbon has beautiful beaches and a mediterranean climate which makes it
+                                            perfect for Summer Holidays.
+                                        </span>
+
+                                        <!--Read More/Less-->
+                                        <button class="more-less-button moreLessButton">Read More</button>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <!--Dubrovnik-->
-            <div class="slide">
-                <h3 class="destination-header text-center">Dubrovnik</h3>
-                <!--Weather Widget-->
-                <div>
-                    <a target="_blank" class="weatherwidget-io" href="https://forecast7.com/en/42d6518d09/dubrovnik/"
-                        data-label_1="DUBROVNIK" data-label_2="WEATHER" data-theme="pure">DUBROVNIK WEATHER</a>
-                    <script>
-                        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-                    </script>
-                </div>
+                    <div class="row card-container attractions">
+                        <!--Attractions in Lisbon-->
+                        <div class="col-12">
+                            <h4 class="barca-attractions-header">Things to do in Lisbon</h4>
+                            <hr>
 
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-12 col-xl-6">
-                            <img class="slide-img" src="assets/images/Dubrovnik.jpg" alt="location-4-img">
+                            <p class="text-center attractions-summary">
+
+                            </p>
+
                         </div>
-                        <div class="col-xs-12 col-xl-6">
-                            <div class="location-info">
 
+                        <!--Belém Tower-->
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img class="card-img-top attractions-img" src="assets/images/belemtower.jpg"
+                                    alt="Belém Tower">
+
+                                <span class="source">
+                                    Image by <a
+                                        href="https://pixabay.com/users/antoniokarmos-6252550/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2809818">António
+                                        Francisco Calado</a> from <a
+                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2809818">Pixabay</a>
+                                </span>
+
+                                <h5 class="attraction">Belém Tower</h5>
+
+                                <p class="tourist-attraction-summary">
+
+                                </p>
+
+                                <div class="attractions-buttons">
+                                    <a class="btn btn-outline-primary btn-sm" target="_blank"
+                                        href="https://www.lisbon.net/belem-tower">
+                                        Book a tour
+                                    </a>
+                                </div>
                             </div>
+                        </div>
+
+                        <!--Praça do Comércio-->
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img class="card-img-top attractions-img" src="assets/images/pracadocomercio.jpg"
+                                    alt="Praça do Comércio">
+
+                                <span>Image by <a
+                                        href="https://pixabay.com/users/mariemoreira-432481/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1186240">mariemoreira</a>
+                                    from <a
+                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1186240">Pixabay</a></span>
+
+                                <h5 class="attraction">Praça do Comércio</h5>
+
+                                <p class="tourist-attraction-summary">
+
+                                </p>
+
+                                <div class="attractions-buttons">
+                                    <a class="btn btn-outline-primary btn-sm" target="_blank" href="">
+                                        Book a tour</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!---->
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img class="card-img-top attractions-img" src="assets/images/carmoconvent.jpg"
+                                    alt="Carmo Convent">
+
+                                <span>
+                                    Image by <a
+                                        href="https://pixabay.com/users/waldomiguez-1847959/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1139970">Waldo
+                                        Miguez</a> from <a
+                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1139970">Pixabay</a>
+                                </span>
+
+                                <h5 class="attraction"></h5>
+
+                                <p class="tourist-attraction-summary">
+
+                                </p>
+
+                                <div class="attractions-buttons">
+                                    <a class="btn btn-outline-primary btn-sm" target="_blank" href="">
+                                        Book a tour
+                                    </a>
+
+                                    <a class="btn btn-outline-primary btn-sm" target="_blank" href="">
+                                        Book tickets
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <a target="_blank" class="btn btn-outline-primary btn-sm" href="">
+
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -584,7 +774,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <!-- buttons -->
@@ -619,6 +808,16 @@
     <!--Popular Attractions-->
     <div class="container-fluid section">
 
+    </div>
+
+    <!--Modal Containing Newsletter form-->
+    <div id="newsletter-modal" class="newsletter-modal">
+        <span class="close-button">&timesb;</span>
+
+        <form name="newsletterForm" onsubmit="validateForm()">
+            <input type="text">
+            <input type="submit" value="Submit">
+        </form>
     </div>
 
     <footer class="text-center">
