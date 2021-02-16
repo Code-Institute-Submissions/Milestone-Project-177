@@ -214,8 +214,9 @@ h5 {
 
 /*Popular locations*/
 #popular-locations {
-    border: 1px solid #0685da;
-    margin: 1rem;
+    border: 2px solid #0685da;
+    margin: 0.5rem;
+    color: #0685da;
 }
 
 #popular-location-header {
@@ -231,8 +232,11 @@ h5 {
     padding: 0px 5px 5px;
 }
 
+.more-link {
+    color: #0e4061;
+}
+
 #popular-locations-header {
-    color: #0685da;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -254,7 +258,6 @@ h5 {
 /*location summary*/
 .location-summary {
     text-align: center;
-    color: #da5b06;
 }
 
 .location-summary-text {
@@ -276,10 +279,6 @@ h5 {
 
 .moreLessButton {
     margin: 0.5rem auto 1rem;
-}
-
-.attractions {
-    color: #0685da;
 }
 
 .barca-attractions-header {
@@ -312,15 +311,7 @@ h5 {
 
 .card-container {
     border: 1px solid #0685da;
-    margin: 1.5rem 0.5rem;
-}
-
-.barca-hotels {
-    margin-top: 1rem;
-}
-
-.hotels {
-    color: #0685da;
+    margin: 1.5rem 0rem;
 }
 
 /*slide buttons*/
@@ -336,28 +327,28 @@ h5 {
 
 .left-bottom {
     left: 10px;
-    bottom: 3%;
+    bottom: 0;
     font-size: 1.5rem;
     border-radius: 10%;
 }
 
 .left-top {
     left: 10px;
-    top: 3%;
+    top: 1%;
     font-size: 1.5rem;
     border-radius: 10%;
 }
 
 .right-bottom {
     right: 10px;
-    bottom: 3%;
+    bottom: 0;
     font-size: 1.5rem;
     border-radius: 10%;
 }
 
 .right-top {
     right: 10px;
-    top: 3%;
+    top: 1%;
     font-size: 1.5rem;
     border-radius: 10%;
 }

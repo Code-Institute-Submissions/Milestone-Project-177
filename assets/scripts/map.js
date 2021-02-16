@@ -15,8 +15,8 @@ function scrollToMap() {
 //Creates map
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 41.346176, lng: 2.168365 },
-        zoom: 11,
+        center: { lat: 41.3851, lng: 2.1734 },
+        zoom: 13,
     });
     //Creates info window
     infoWindow = new google.maps.InfoWindow({
