@@ -286,6 +286,10 @@ h5 {
     margin-top: 1rem;
 }
 
+.attractions-summary {
+    color: #da5b06;
+}
+
 .card {
     height: 65vh;
     margin-bottom: 0.5rem;
@@ -298,6 +302,10 @@ h5 {
 .tourist-attraction-summary {
     height: 20vh;
     overflow-y: scroll;
+}
+
+.attraction, .hotel {
+    color: #da5b06;
 }
 
 .attractions-buttons {
