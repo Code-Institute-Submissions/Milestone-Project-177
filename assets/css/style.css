@@ -36,6 +36,11 @@ h1, h2, h3, h4, h5, h6 {
 h5 {
     text-align: center;
 }
+
+.container-fluid {
+    padding: 0!important;
+}
+
 /*End of General Style*/
 
 /*Nav*/
@@ -215,7 +220,8 @@ h5 {
 /*Popular locations*/
 #popular-locations {
     border: 2px solid #0685da;
-    margin: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     color: #0685da;
 }
 
@@ -229,7 +235,7 @@ h5 {
 }
 
 .slides-wrapper {
-    padding: 0px 5px 5px;
+    padding: 0 5px;
 }
 
 .more-link {
@@ -281,7 +287,7 @@ h5 {
     margin: 0.5rem auto 1rem;
 }
 
-.barca-attractions-header {
+.attractions-header {
     text-align: center;
     margin-top: 1rem;
 }
@@ -292,11 +298,32 @@ h5 {
 }
 
 .hotel-card {
-    height: 85vh;
+    border-bottom: 1px solid #0685da;
 }
 
 .hotel-card-img {
-    height: 70%;
+    height: 55vh;
+}
+
+.hotel-amenities, .room-amenities {
+    margin-top: 1rem;
+}
+
+.hotel-amenities {
+    float: left;
+}
+
+.room-amenities {
+    float: right;
+    margin-right: 1rem;
+}
+
+.stars {
+    text-align: center;
+}
+
+.hotel-amenities-header {
+    float: left;
 }
 
 .tourist-attraction-summary {
@@ -314,7 +341,6 @@ h5 {
 }
 
 .card-container {
-    border: 1px solid #0685da;
     margin: 1.5rem 0rem;
 }
 
