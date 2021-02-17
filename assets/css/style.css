@@ -345,6 +345,10 @@ h5 {
 }
 
 /*slide buttons*/
+.left-bottom:hover , .left-top:hover , .right-bottom:hover , .right-top:hover  {
+    cursor: pointer;
+}
+
 .left-bottom, .right-bottom {
     position: absolute;
     color: #0685da;
