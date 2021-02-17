@@ -406,13 +406,13 @@ h5 {
     left: 5px;
     top: 5px;
     width: 100vw;
-    height: 80vh;
-    background-color: #0685da;
+    height: 100vh;
+    background-color: #fff;
+    padding: 10px;
 }
 
 .modal-content {
     width: 80%;
-    background-color: rgb(173, 166, 166);
     color: #0685da;
     margin: 20% auto;
 }
@@ -422,8 +422,42 @@ h5 {
     right: 5px;
     top: 5px;
     color: #0685da;
-    float: right;
     font-size: 2rem;
+}
+
+.close-button:hover {
+    cursor: pointer;
+}
+
+/*Hot Deals*/
+/*accordian button*/
+.hot-deals h3, .hot-deals p {
+    color: #0685da;
+}
+
+.accordion {
+    text-align: center;
+    width: 100%;
+    background-color: #0685da;
+    color: #fff;
+    transition: 0.5s;
+}
+
+/*active and hover styles for accordian button*/
+.active, .accordion:hover {
+    background-color: #0e4061;
+}
+
+/*Accordian content, hidden by default*/
+.accordion-box {
+    display: none;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.accordion-box h3 {
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /*Newsletter form on Modal*/

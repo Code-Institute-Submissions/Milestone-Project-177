@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Milestone Project 2</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/scripts/accordion.js"></script>
     <script src="assets/scripts/newsletter.js"></script>
     <script src="assets/scripts/scrollspy.js"></script>
     <script src="assets/scripts/moreless.js"></script>
@@ -1107,19 +1108,43 @@
     <!--End of popular locations-->
 
     <!--Hot Deals-->
-    <div class="container-fluid section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col hot-deals">
 
+                <h3 class="text-center">Hot Deals</h3>
+
+                <button id="first-accordion" class="accordion btn btn-outline-primary">Deal 1</button>
+                <div class="accordion-box">
+                    <h3>Deal 1</h3>
+                </div>
+
+                <button class="accordion btn btn-outline-primary">Deal 2</button>
+                <div class="accordion-box">
+                    <h3>Deal 2</h3>
+                </div>
+
+                <button class="accordion btn btn-outline-primary">Deal 3</button>
+                <div class="accordion-box">
+                    <h3>Deal 3</h3>
+                </div>
+
+            </div>
+        </div>
     </div>
     <!--End of Hot Deals-->
 
     <!--Popular Attractions-->
-    <div class="container-fluid section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
 
+            </div>
+        </div>
     </div>
 
     <!--Modal Containing Newsletter form-->
     <div id="newsletter-modal" class="newsletter-modal">
-
 
         <div class="modal-content">
             <!--Close button-->
@@ -1140,7 +1165,9 @@
                 <input type="email" name="email" id="email" placeholder="person@example.com">
                 <input type="submit" value="Submit">
             </form>
+
         </div>
+
     </div>
 
     <footer class="text-center">
