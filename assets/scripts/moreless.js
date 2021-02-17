@@ -2,7 +2,7 @@ $(document).ready(function() {
     //More / less button click handler
     $(".moreLessButton").click(function() {
         //hides #more section
-        $(this).prev().toggle();
+        $(this).prev().prev().toggle();
 
         //changes inner html of read more / less button
         if($(this).text()=="Read More"){

@@ -12,6 +12,7 @@ function scrollToMap() {
     var element = document.getElementById("map");
     //gets listings 
     const listings = document.getElementById("listing");
+    //
 
     //Checks if listings are showing
     if (listings.style.display == "block") {

@@ -10,7 +10,10 @@
     <script src="assets/scripts/newsletter.js"></script>
     <script src="assets/scripts/scrollspy.js"></script>
     <script src="assets/scripts/moreless.js"></script>
+    <script src="assets/scripts/scrollspy.js"></script>
     <script defer src="assets/scripts/slideshow.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
     <script src="assets/scripts/map.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script defer
@@ -42,7 +45,7 @@
         <div class="navbar-collapse collapse w-100 text-center" id="nav-collapse">
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link" href="#popular-locations">Popular Locations</a>
+                    <a class="nav-link" href="#popular-locations-header">Popular Locations</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#hot-deals">Hot Deals</a>
@@ -171,19 +174,24 @@
                             <img class="slide-img" src="assets/images/Barcelona.jpg" alt="Image of Barcelona">
 
                             <!--Image source-->
-                            <span class="source">
+                            <div class="source">
                                 Image by <a
                                     href="https://pixabay.com/users/dominickvietor-6362547/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5188598">Dominick
                                     Vietor</a> from <a
                                     href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5188598">Pixabay</a>
-                            </span>
+                            </div>
+
+                            <br>
+                            <br>
                         </div>
+
+
 
                         <div class="col-xs-12 col-xl-6">
                             <!--Info about Barcelona-->
                             <div class="location-info">
                                 <div class="location-summary">
-                                    <h4 class="uppercase">About Barcelona</h4>
+                                    <h3 class="mt-3 uppercase">About Barcelona</h3>
 
                                     <p class="location-summary-text">
                                         Barcelona is situated on the North-Eastern coast of Spain. It is home to
@@ -201,13 +209,16 @@
                                             Barcelona is rich in culture, with over 55 museums, stunning gothic
                                             architecture and amazing Sports Venues.
                                             <br>
-                                            Barcelona is also renowned for it's performing arts, with many venues for
+                                            Barcelona is also renowned for it's performing arts, with many venues
+                                            for
                                             live music and theatre
                                             <br>
                                             <a class="more-link" target="_blank"
                                                 href="https://en.wikipedia.org/wiki/Barcelona">Learn more about
                                                 Barcelona</a>
                                         </span>
+
+                                        <br>
 
                                         <!--Read More/Less-->
                                         <button class="more-less-button moreLessButton">Read More</button>
@@ -229,7 +240,8 @@
                             <p class="text-center attractions-summary">
                                 With a wealth of culture and history, there is no lack of things to keep you busy in
                                 Barcelona.
-                                It is no surprise that Barcelona is Spain's most popular destination for international
+                                It is no surprise that Barcelona is Spain's most popular destination for
+                                international
                                 visitors.
                                 See our top picks of things to do in Barcelona below:
                             </p>
@@ -243,17 +255,20 @@
                                     src="assets/images/BasilicaoftheSagradaFamilia.jpg"
                                     alt="Basilica of the Sagrada Familia">
 
-                                <span class="source">Image by <a
+                                <div class="source">Image by <a
                                         href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=918842">Free-Photos</a>
                                     from <a
-                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=918842">Pixabay</a></span>
+                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=918842">Pixabay</a>
+                                </div>
 
                                 <h5 class="attraction">Basilica of the Sagrada Familia</h5>
 
                                 <p class="tourist-attraction-summary">
-                                    The Basilica of the Sagrada Familia is a large, unfinished Basilica (Roman Catholic
+                                    The Basilica of the Sagrada Familia is a large, unfinished Basilica (Roman
+                                    Catholic
                                     Ceremonial church).
-                                    It has been under construction since 1882 and is most well known for it's size and
+                                    It has been under construction since 1882 and is most well known for it's size
+                                    and
                                     breath-taking beauty.
                                 </p>
 
@@ -272,19 +287,20 @@
                                 <img class="card-img-top attractions-img" src="assets/images/casabatllo.jpg"
                                     alt="Casa Batllo">
 
-                                <span class="source">
+                                <div class="source">
                                     Image by <a
                                         href="https://pixabay.com/users/xevolution-6299062/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2691031">xevolution</a>
                                     from <a
                                         href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2691031">Pixabay</a>
-                                </span>
+                                </div>
 
                                 <h5 class="attraction">Casa Batllo</h5>
 
                                 <p class="tourist-attraction-summary">
                                     The Casa Batllo is a UNESCO World Heritage site and a staple of the City of
                                     Barcelona, welcoming around 1 million visitors each year.
-                                    The vibrant colours and strangely designed architecture are just a few of the things
+                                    The vibrant colours and strangely designed architecture are just a few of the
+                                    things
                                     which make the Casa Batllo such a tourist hot spot.
                                 </p>
 
@@ -297,17 +313,17 @@
                         </div>
 
                         <!--Camp Nou-->
-                        <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="col-xs-12 col-md-12 col-lg-4">
                             <div class="card">
                                 <img class="card-img-top attractions-img" src="assets/images/campnou.jpg"
                                     alt="Camp Nou">
 
-                                <span class="source">
+                                <div class="source">
                                     Image by <a
                                         href="https://pixabay.com/users/frodecj-470410/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=463349">FrodeCJ</a>
                                     from <a
                                         href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=463349">Pixabay</a>
-                                </span>
+                                </div>
 
                                 <h5 class="attraction">Camp Nou</h5>
 
@@ -357,11 +373,12 @@
                                 <img class="hotel-card-img card-img-top" src="assets/images/hotel-majestic.jpg"
                                     alt="Hotel Majestic">
 
-                                Image by <a
-                                    href="https://pixabay.com/users/mariamichelle-165491/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1157570">Michelle
-                                    Maria</a> from <a
-                                    href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1157570">Pixabay</a>
-
+                                <div class="source">
+                                    Image by <a
+                                        href="https://pixabay.com/users/mariamichelle-165491/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1157570">Michelle
+                                        Maria</a> from <a
+                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1157570">Pixabay</a>
+                                </div>
 
                                 <!--Hotel Name-->
                                 <h5 class="hotel text-center">Hotel Majestic</h5>
@@ -380,44 +397,41 @@
                                         href="https://majestichotelgroup.com/en/barcelona/hotel-majestic">Book</a>
                                 </div>
 
-                                <div class="hotel-amenities">
+                                <div class="amenities">
+                                    <div class="hotel-amenities">
 
-                                    <h5 class="hotel-amenities-header">Hotel Amenities</h5>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-swimmer"></i> Pool
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-cocktail"></i> Bar
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-wifi"></i> Free Wifi
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-hot-tub"></i> Sauna
+                                            </li>
+                                        </ul>
+                                    </div>
 
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-swimmer"></i> Pool
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-cocktail"></i> Bar
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-wifi"></i> Free Wifi
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-hot-tub"></i> Sauna
-                                        </li>
-                                    </ul>
+
+                                    <div class="room-amenities">
+
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-tv"></i> Flatscreen TV
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-utensils"></i> Room Service
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-snowflake"></i> Air Conditioning
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-
-
-                                <div class="room-amenities">
-
-                                    <h5>Room Amenities</h5>
-
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-tv"></i> Flatscreen TV
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-utensils"></i> Room Service
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-snowflake"></i> Air Conditioning
-                                        </li>
-                                    </ul>
-                                </div>
-
                             </div>
                         </div>
 
@@ -429,11 +443,11 @@
                                     alt="Oriente Atiram Hotel Barcelona">
 
                                 <!--Image Credit-->
-                                <span>
+                                <div class="source">
                                     Image by <a
                                         href="https://www.istockphoto.com/portfolio/kutredrig?assettype=image&mediatype=photography">Kutredrig</a>
                                     on <a href="https://www.istockphoto.com/">i stock</a>
-                                </span>
+                                </div>
 
                                 <!--Hotel Name-->
                                 <h5 class="text-center hotel">Oriente Atiram Hotel Barcelona</h5>
@@ -451,43 +465,40 @@
                                         href="https://www.tripadvisor.co.uk/Hotel_Review-g187497-d250390-Reviews-Oriente_Atiram-Barcelona_Catalonia.html">Book</a>
                                 </div>
 
-                                <div class="hotel-amenities">
+                                <div class="amenities">
+                                    <div class="hotel-amenities">
 
-                                    <h5 class="hotel-amenities-header">Hotel Amenities</h5>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-wine-glass-alt"></i> Wine
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-wifi"></i> Free Wifi
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-cocktail"></i> Bar
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-hamburger"></i> Restaurant
+                                            </li>
+                                        </ul>
+                                    </div>
 
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-wine-glass-alt"></i> Wine
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-wifi"></i> Free Wifi
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-cocktail"></i> Bar
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-hamburger"></i> Restaurant
-                                        </li>
-                                    </ul>
+                                    <div class="room-amenities">
+
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-tv"></i> Flatscreen TV
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-utensils"></i> Room Service
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-snowflake"></i> Air Conditioning
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-
-                                <div class="room-amenities">
-
-                                    <h5>Room Amenities</h5>
-
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-tv"></i> Flatscreen TV
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-utensils"></i> Room Service
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-snowflake"></i> Air Conditioning
-                                        </li>
-                                    </ul>
-                                </div>
-
                             </div>
                         </div>
 
@@ -518,19 +529,23 @@
                         <div class="col-xs-12 col-xl-6 slide-img-container">
                             <!--Image of Paris-->
                             <img class="slide-img" src="assets/images/arcDeTriomphe.jpg" alt="Paris image">
-                            Image by <a
-                                href="https://pixabay.com/users/herryway-29985/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=101633">herry
-                                wibisono</a> from <a
-                                href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=101633">Pixabay</a>
+
+                            <div class="source">
+                                Image by <a
+                                    href="https://pixabay.com/users/herryway-29985/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=101633">herry
+                                    wibisono</a> from <a
+                                    href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=101633">Pixabay</a>
+                            </div>
                         </div>
                         <div class="col-xs-12 col-xl-6">
                             <!-- Info about Paris -->
                             <div class="location-info">
                                 <div class="location-summary">
-                                    <h4 class="uppercase">About Paris</h4>
+                                    <h3 class="mt-3 uppercase">About Paris</h3>
 
                                     <p class="location-summary-text">
-                                        Since the 17th century, Paris has been one of Europe's major centres of finance,
+                                        Since the 17th century, Paris has been one of Europe's major centres of
+                                        finance,
                                         diplomacy, commerce, fashion, science and arts.<span><a class="more-link"
                                                 href="https://en.wikipedia.org/wiki/Paris">[1]</a></span>
                                         <br>
@@ -544,14 +559,17 @@
                                             The City is home to some wonderful architecture and packed with over 100
                                             museums.
                                             <br>
-                                            In 2019 Greater Paris (Paris and it's 3 surrounding Departments) had 2,056
+                                            In 2019 Greater Paris (Paris and it's 3 surrounding Departments) had
+                                            2,056
                                             Hotels including 94 5-Star Hotels
                                             <br>
                                         </span>
 
+                                        <br>
+
                                         <!--Read More/Less-->
-                                        <button class="moreLessButton">Read
-                                            more</button>
+                                        <button class="moreLessButton">Read More</button>
+
                                     </p>
 
                                 </div>
@@ -577,14 +595,17 @@
                             <div class="card">
                                 <img class="card-img-top attractions-img" src="assets/images/eiffel-tower.jpg"
                                     alt="Eiffel Tower">
-                                <span class="source">Image by <a
+
+                                <div class="source">Image by <a
                                         href="https://pixabay.com/users/thedigitalartist-202249/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3349075">Pete
                                         Linforth</a> from <a
-                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3349075">Pixabay</a></span>
+                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3349075">Pixabay</a>
+                                </div>
                                 <h5>Eiffel Tower</h5>
 
                                 <p class="tourist-attraction-summary">
-                                    The Eiffel Tower is named after the engineer Gustave Eiffel, whose company designed
+                                    The Eiffel Tower is named after the engineer Gustave Eiffel, whose company
+                                    designed
                                     the tower. It is 324 meters high at the tip and has a beautiful view of Paris.
                                 </p>
 
@@ -601,16 +622,19 @@
                             <div class="card">
                                 <img class="card-img-top attractions-img" src="assets/images/catacombs.jpg"
                                     alt="Paris Catacombs">
-                                <span class="source"> Image by <a
+                                <div class="source"> Image by <a
                                         href="https://pixabay.com/users/annbal-2197203/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2109028">Ann
                                         B.</a> from <a
-                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2109028">Pixabay</a></span>
+                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2109028">Pixabay</a>
+                                </div>
                                 <h5>Paris Catacombs</h5>
 
                                 <p class="tourist-attraction-summary">
-                                    The Catacombs of Paris lay rest to the remains, stacked floor to ceiling, of around
+                                    The Catacombs of Paris lay rest to the remains, stacked floor to ceiling, of
+                                    around
                                     6 million people.
-                                    They were placed in old tunnels which have existed since the 13th Century due to the
+                                    They were placed in old tunnels which have existed since the 13th Century due to
+                                    the
                                     overcrowding of graveyards.
                                 </p>
 
@@ -623,19 +647,21 @@
                         </div>
 
                         <!--Louvre Museum-->
-                        <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="col-xs-12 col-md-12 col-lg-4">
                             <div class="card">
                                 <img class="card-img-top attractions-img" src="assets/images/Louvre.jpg"
                                     alt="Louvre Museum">
-                                <span class="source">Image by <a
+                                <div class="source">Image by <a
                                         href="https://pixabay.com/users/edinugraha-30562/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=102840">Edi
                                         Nugraha</a> from <a
-                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=102840">Pixabay</a></span>
+                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=102840">Pixabay</a>
+                                </div>
 
                                 <h5>Louvre Museum</h5>
 
                                 <p class="tourist-attraction-summary">
-                                    The Louvre holds countless masterpieces attracting tourists from around the world.
+                                    The Louvre holds countless masterpieces attracting tourists from around the
+                                    world.
                                     Some of these paintings include The Mona Lisa by Leonardo da Vinci and Vénus de
                                     Milo.
                                 </p>
@@ -667,38 +693,38 @@
                             <h5>Our Top Picks</h5>
                         </div>
 
-                        <div class="col-xs-12 col-6 hotel-card">
-                            <div>
-                                <img class="card-img-top hotel-card-img"
-                                    src="https://upload.wikimedia.org/wikipedia/commons/8/80/H%C3%B4tel_du_Louvre%2C_Paris%2C_France_-_April_2011.jpg"
-                                    alt="Hotel Du Louvre">
-                                <span>
-                                    <a
-                                        href="https://commons.wikimedia.org/wiki/File:H%C3%B4tel_du_Louvre,_Paris,_France_-_April_2011.jpg">Cristian
-                                        Bortes from Cluj-Napoca, Romania</a>, <a
-                                        href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia
-                                    Commons
-                                </span>
+                        <div class="col-xs-12 col-xl-6 hotel-card">
+                            <img class="card-img-top hotel-card-img"
+                                src="https://upload.wikimedia.org/wikipedia/commons/8/80/H%C3%B4tel_du_Louvre%2C_Paris%2C_France_-_April_2011.jpg"
+                                alt="Hotel Du Louvre">
 
-                                <h5>Hotel Du Louvre</h5>
+                            <div class="source">
+                                <a
+                                    href="https://commons.wikimedia.org/wiki/File:H%C3%B4tel_du_Louvre,_Paris,_France_-_April_2011.jpg">Cristian
+                                    Bortes from Cluj-Napoca, Romania</a>, <a
+                                    href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via
+                                Wikimedia
+                                Commons
+                            </div>
 
-                                <!--4 and a half stars-->
-                                <div class="stars">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fas fa-star-half"></span>
-                                </div>
+                            <h5>Hotel Du Louvre</h5>
 
-                                <div class="button-container text-center">
-                                    <a class="btn btn-outline-primary btn-sm"
-                                        href="https://www.hyatt.com/en-US/hotel/france/hotel-du-louvre/paraz">Book</a>
-                                </div>
+                            <!--4 and a half stars-->
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fas fa-star-half"></span>
+                            </div>
 
+                            <div class="button-container text-center">
+                                <a class="btn btn-outline-primary btn-sm"
+                                    href="https://www.hyatt.com/en-US/hotel/france/hotel-du-louvre/paraz">Book</a>
+                            </div>
+
+                            <div class="amenities">
                                 <div class="hotel-amenities">
-
-                                    <h5 class="hotel-amenities-header">Hotel Amenities</h5>
 
                                     <ul>
                                         <li>
@@ -715,8 +741,6 @@
 
 
                                 <div class="room-amenities">
-
-                                    <h5>Room Amenities</h5>
 
                                     <ul>
                                         <li>
@@ -740,12 +764,12 @@
                                     src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Shangri-La_H%C3%B4tel_Paris_2011.jpg"
                                     alt="Shangri-La Hotel, Paris">
 
-                                <span>
+                                <div class="source">
                                     <a
                                         href="https://commons.wikimedia.org/wiki/File:Shangri-La_H%C3%B4tel_Paris_2011.jpg">Siren-Com</a>,
                                     <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via
                                     Wikimedia Commons
-                                </span>
+                                </div>
 
                                 <h5>Shangri-La Hotel, Paris</h5>
 
@@ -763,39 +787,37 @@
                                         href="https://www.shangri-la.com/en/paris/shangrila/">Book</a>
                                 </div>
 
-                                <div class="hotel-amenities">
+                                <div class="amenities">
+                                    <div class="hotel-amenities">
 
-                                    <h5 class="hotel-amenities-header">Hotel Amenities</h5>
-
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-wifi"></i> Free Wifi
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-cocktail"></i> Bar
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-swimmer"></i> Pool
-                                        </li>
-                                    </ul>
-                                </div>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-wifi"></i> Free Wifi
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-cocktail"></i> Bar
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-swimmer"></i> Pool
+                                            </li>
+                                        </ul>
+                                    </div>
 
 
-                                <div class="room-amenities">
+                                    <div class="room-amenities">
 
-                                    <h5>Room Amenities</h5>
-
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-utensils"></i> Room Service
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-snowflake"></i> Air Conditioning
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-coffee"></i> Coffee / Tea Maker
-                                        </li>
-                                    </ul>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-utensils"></i> Room Service
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-snowflake"></i> Air Conditioning
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-coffee"></i> Coffee / Tea Maker
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -827,30 +849,33 @@
                             <div class="slide-img-container">
                                 <img class="slide-img" src="assets/images/Lisbon.jpg" alt="location-3-img">
 
-                                <span class="source">
+                                <div class="source">
                                     Image by <a
                                         href="https://pixabay.com/users/z0man-6079540/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4820579">Steffen
                                         Zimmermann</a> from <a
                                         href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4820579">Pixabay</a>
-                                </span>
+                                </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-xl-6">
                             <div class="location-info">
                                 <div class="location-summary">
-                                    <h4 class="uppercase">About Lisbon</h4>
+                                    <h3 class="mt-3 uppercase">About Lisbon</h3>
 
                                     <p class="location-summary-text">
                                         Lisbon is the capital of Portugal and is recognised for it's importance in
                                         finance, tourism, international trade and arts among many other things.
                                         <br>
-                                        It has stunning architecture of various styles and an array of museums and arts
+                                        It has stunning architecture of various styles and an array of museums and
+                                        arts
                                         collections.
                                         <!--Hidden by default-->
                                         <span class="more">
                                             Lisbon has beautiful beaches and a mediterranean climate which makes it
                                             perfect for Summer Holidays.
                                         </span>
+
+                                        <br>
 
                                         <!--Read More/Less-->
                                         <button class="more-less-button moreLessButton">Read More</button>
@@ -867,7 +892,8 @@
                             <hr>
 
                             <p class="text-center attractions-summary">
-                                Explore the beautiful hillsides, buzzing nightlife and rich culture that Lisbon has to
+                                Explore the beautiful hillsides, buzzing nightlife and rich culture that Lisbon has
+                                to
                                 offer.
                                 See our top picks below:
                             </p>
@@ -880,12 +906,12 @@
                                 <img class="card-img-top attractions-img" src="assets/images/belemtower.jpg"
                                     alt="Belém Tower">
 
-                                <span class="source">
+                                <div class="source">
                                     Image by <a
                                         href="https://pixabay.com/users/antoniokarmos-6252550/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2809818">António
                                         Francisco Calado</a> from <a
                                         href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2809818">Pixabay</a>
-                                </span>
+                                </div>
 
                                 <h5 class="attraction">Belém Tower</h5>
 
@@ -910,15 +936,17 @@
                                 <img class="card-img-top attractions-img" src="assets/images/pracadocomercio.jpg"
                                     alt="Praça do Comércio">
 
-                                <span>Image by <a
+                                <div class="source">Image by <a
                                         href="https://pixabay.com/users/mariemoreira-432481/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1186240">mariemoreira</a>
                                     from <a
-                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1186240">Pixabay</a></span>
+                                        href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1186240">Pixabay</a>
+                                </div>
 
                                 <h5 class="attraction">Praça do Comércio</h5>
 
                                 <p class="tourist-attraction-summary">
-                                    The Praça do Comércio is a wonderful site to behold if you're interested in history.
+                                    The Praça do Comércio is a wonderful site to behold if you're interested in
+                                    history.
                                     Guided tours are offered for those who want to learn more about the location.
                                     The Praça do Comércio features a statue King José I and is home to the oldest
                                     restaurant in Lisbon: The Martinho da Arcada.
@@ -933,22 +961,23 @@
                         </div>
 
                         <!--Carmo Convent-->
-                        <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="col-xs-12 col-md-12 col-lg-4">
                             <div class="card">
                                 <img class="card-img-top attractions-img" src="assets/images/carmoconvent.jpg"
                                     alt="Carmo Convent">
 
-                                <span>
+                                <div class="source">
                                     Image by <a
                                         href="https://pixabay.com/users/waldomiguez-1847959/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1139970">Waldo
                                         Miguez</a> from <a
                                         href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1139970">Pixabay</a>
-                                </span>
+                                </div>
 
                                 <h5 class="attraction">Carmo Convent</h5>
 
                                 <p class="tourist-attraction-summary">
-                                    Carmo Convent is a former Catholic Covenant and is a reminder of an earthquake which
+                                    Carmo Convent is a former Catholic Covenant and is a reminder of an earthquake
+                                    which
                                     destroyed much of Lisbon on 1st November 1755.
                                 </p>
 
@@ -978,17 +1007,18 @@
                             <h5>Our Top Picks</h5>
                         </div>
 
-                        <div class="col-xs-12 col-6 hotel-card">
+                        <div class="col-xs-12 col-xl-6 hotel-card">
                             <div>
                                 <img class="card-img-top hotel-card-img"
                                     src="https://upload.wikimedia.org/wikipedia/commons/8/87/Hotel_Avenida_Palace.jpg"
                                     alt="Hotel Avenida Palace">
 
-                                <span>
+                                <div class="source">
                                     <a href="https://commons.wikimedia.org/wiki/File:Hotel_Avenida_Palace.jpg">Susanne
-                                        Nilsson</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA
+                                        Nilsson</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0">CC
+                                        BY-SA
                                         2.0</a>, via Wikimedia Commons
-                                </span>
+                                </div>
 
                                 <h5>Hotel Avenida Palace</h5>
 
@@ -1006,39 +1036,37 @@
                                         href="https://www.hotelavenidapalace.pt/">Book</a>
                                 </div>
 
-                                <div class="hotel-amenities">
+                                <div class="amenities">
+                                    <div class="hotel-amenities">
 
-                                    <h5 class="hotel-amenities-header">Hotel Amenities</h5>
-
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-wifi"></i> Free Wifi
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-coffee"></i> Free Breakfast
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-spa"></i> Massage
-                                        </li>
-                                    </ul>
-                                </div>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-wifi"></i> Free Wifi
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-coffee"></i> Free Breakfast
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-spa"></i> Massage
+                                            </li>
+                                        </ul>
+                                    </div>
 
 
-                                <div class="room-amenities">
+                                    <div class="room-amenities">
 
-                                    <h5>Room Amenities</h5>
-
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-tv"></i> Flatscreen TV
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-coffee"></i> Coffee / Tea Maker
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-snowflake"></i> Air Conditioning
-                                        </li>
-                                    </ul>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-tv"></i> Flatscreen TV
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-coffee"></i> Coffee / Tea Maker
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-snowflake"></i> Air Conditioning
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1049,11 +1077,11 @@
                                 <img class="card-img-top hotel-card-img" src="assets/images/edenhotel.jpg"
                                     alt="Teatro Bed & Breakfast">
 
-                                <span>
+                                <div class="source">
                                     image by
                                     <a href="https://www.flickr.com/photos/_mia/5023475281">mia!
                                     </a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">source</a>
-                                </span>
+                                </div>
 
                                 <h5>Teatro Bed & Breakfast</h5>
 
@@ -1066,41 +1094,40 @@
                                     <span class="fas fa-star-half"></span>
                                 </div>
 
-                                <div class="button-container">
+                                <div class="button-container text-center">
                                     <a class="btn btn-outline-primary btn-sm"
                                         href="https://www.tripadvisor.co.uk/Hotel_Review-g189158-d3428727-Reviews-Teatro_Bed_Breakfast-Lisbon_Lisbon_District_Central_Portugal.html">Book</a>
                                 </div>
 
-                                <div class="hotel-amenities">
+                                <div class="amenities">
+                                    <div class="hotel-amenities">
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-tv"></i> Flatscreen Tv
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-snowflake"></i> Air Conditioning
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-coffee"></i> Minibar
+                                            </li>
+                                        </ul>
 
-                                    <h5 class="hotel-amenities-header">Hotel Amenities</h5>
-
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-wifi"></i> Free Wifi
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-coffee"></i> Free Breakfast
-                                        </li>
-                                    </ul>
-                                </div>
+                                    </div>
 
 
-                                <div class="room-amenities">
+                                    <div class="room-amenities">
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-wifi"></i> Free Wifi
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-coffee"></i> Free Breakfast
+                                            </li>
+                                        </ul>
 
-                                    <h5>Room Amenities</h5>
 
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-tv"></i> Flatscreen Tv
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-snowflake"></i> Air Conditioning
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-coffee"></i> Minibar
-                                        </li>
-                                    </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1154,7 +1181,7 @@
                         <img class="deals-card-image card-img-top" src="assets/images/hotel-majestic.jpg"
                             alt="Hotel Majestic">
 
-                        <div>
+                        <div class="source">
                             Image by <a
                                 href="https://pixabay.com/users/mariamichelle-165491/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1157570">Michelle
                                 Maria</a> from <a
@@ -1164,13 +1191,6 @@
                     </div>
 
                     <div class="deal-info">
-                        <p class="text-center">
-                            The location of the Hotel Majestic Barcelona couldn't be better, it is located in the heart
-                            of Barcelona.
-                            <br>
-                            The Hotel has an onsite spa, terrace with beautiful views over Barcelona and a swimming pool
-                            to relax in.
-                        </p>
 
                         <div class="hot-deals-restaurants">
                             <p> 421 Restaurants within 0.3 miles </p>
@@ -1178,6 +1198,17 @@
                         <div class="hot-deals-attractions">
                             <p> 112 attractions within 0.3 miles </p>
                         </div>
+
+                        <p class="text-center">
+                            The location of the Hotel Majestic Barcelona couldn't be better, it is located in the
+                            heart
+                            of Barcelona.
+                            <br>
+                            The Hotel has an onsite spa, terrace with beautiful views over Barcelona and a swimming
+                            pool
+                            to relax in.
+                        </p>
+
                     </div>
 
                     <div class="text-center deal-button">
@@ -1199,7 +1230,7 @@
                             src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Shangri-La_H%C3%B4tel_Paris_2011.jpg"
                             alt="Shangri-La Hotel, Paris">
 
-                        <div>
+                        <div class="source">
                             <a
                                 href="https://commons.wikimedia.org/wiki/File:Shangri-La_H%C3%B4tel_Paris_2011.jpg">Siren-Com</a>,
                             <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via
@@ -1242,7 +1273,7 @@
                             src="https://upload.wikimedia.org/wikipedia/commons/8/87/Hotel_Avenida_Palace.jpg"
                             alt="Hotel Avenida Palace">
 
-                        <div>
+                        <div class="source">
                             <a href="https://commons.wikimedia.org/wiki/File:Hotel_Avenida_Palace.jpg">Susanne
                                 Nilsson</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA
                                 2.0</a>, via Wikimedia Commons
@@ -1287,6 +1318,7 @@
             </div>
         </div>
     </div>
+    <!--End of Popular Attractions-->
 
     <!--Modal Containing Newsletter form-->
     <div id="newsletter-modal" class="newsletter-modal">
@@ -1314,6 +1346,7 @@
         </div>
     </div>
 
+    <!--Footer-->
     <footer class="text-center">
         <div class="socials-icons">
             <a href="https://en-gb.facebook.com/"> <i class="fab fa-facebook-square"> Like us on Facebook</i></a>
@@ -1323,6 +1356,7 @@
             <a class="newsletter-button">Sign up for our Newsletter</a>
         </div>
     </footer>
+    <!--End of Footer-->
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
