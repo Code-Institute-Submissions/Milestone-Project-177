@@ -1,9 +1,8 @@
 $(document).ready(function() {
     $("#newsletter-button").click(function() {
-        $("#newsletter-modal").css('display', 'block');
-    })
+        $("#newsletter-modal").css("display", "block");
+    });
     $(".close-button").click(function() {
-        $("#newsletter-modal").css('display', 'none');
-    })
-})
-
+        $("#newsletter-modal").css("display", "none");
+    });
+});

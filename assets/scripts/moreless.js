@@ -11,5 +11,5 @@ $(document).ready(function() {
         else if($(this).text()=="Read Less"){
             $(this).text("Read More");
         }
-    })
-})
+    });
+});
