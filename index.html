@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Milestone Project 2</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/scripts/newsletter.js"></script>
     <script src="assets/scripts/scrollspy.js"></script>
     <script src="assets/scripts/moreless.js"></script>
     <script defer src="assets/scripts/slideshow.js"></script>
@@ -1118,12 +1119,28 @@
 
     <!--Modal Containing Newsletter form-->
     <div id="newsletter-modal" class="newsletter-modal">
-        <span class="close-button">&timesb;</span>
 
-        <form name="newsletterForm" onsubmit="validateForm()">
-            <input type="text">
-            <input type="submit" value="Submit">
-        </form>
+
+        <div class="modal-content">
+            <!--Close button-->
+            <span class="close-button">&timesb;</span>
+
+            <!--Newsletter form-->
+            <form name="newsletterForm" onsubmit="validateForm()">
+
+                <h3>Sign up for our Newsletter</h3>
+
+                <label for="fname">First Name:</label>
+                <input id="fname" type="text" name="fname" placeholder="John">
+
+                <label for="lname">Last Name:</label>
+                <input id="lname" type="text" name="lname" placeholder="Doe">
+
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" placeholder="person@example.com">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </div>
 
     <footer class="text-center">
@@ -1131,7 +1148,9 @@
             <a href=""><i class="fab fa-facebook-square">Facebook</i></a>
             <a href=""><i class="fab fa-twitter-square"></i>Twitter</a>
         </div>
-        <a href="">Sign Up For Our Newsletter</a>
+        <div id="newsletter-button">
+            <a class="btn btn-outline-primary">Sign up for our Newsletter</a>
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

@@ -305,8 +305,9 @@ h5 {
     height: 55vh;
 }
 
-.hotel-amenities, .room-amenities {
+.hotel-amenities, .room-amenities, .hotel-amenities li, .room-amenities li {
     margin-top: 1rem;
+    list-style-type: none;
 }
 
 .hotel-amenities {
@@ -316,6 +317,10 @@ h5 {
 .room-amenities {
     float: right;
     margin-right: 1rem;
+}
+
+.hotel-amenities ul, .room-amenities ul {
+    padding-left: 0!important;
 }
 
 .stars {
@@ -392,6 +397,36 @@ h5 {
 }
 /*End of slide buttons*/
 /*End of Popular locations*/
+
+/*Modal*/
+#newsletter-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 5px;
+    top: 5px;
+    width: 100vw;
+    height: 80vh;
+    background-color: #0685da;
+}
+
+.modal-content {
+    width: 80%;
+    background-color: rgb(173, 166, 166);
+    color: #0685da;
+    margin: 20% auto;
+}
+
+.close-button {
+    position: relative;
+    right: 5px;
+    top: 5px;
+    color: #0685da;
+    float: right;
+    font-size: 2rem;
+}
+
+/*Newsletter form on Modal*/
 
 /*Footer*/
 .socials-icons {
