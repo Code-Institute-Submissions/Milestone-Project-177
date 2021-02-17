@@ -442,7 +442,13 @@ h5 {
     color: #0685da;
 }
 
+.deals-card-image {
+    height: 50vh;
+    width: 60vw;
+}
+
 .accordion {
+    margin-top: 1rem;
     text-align: center;
     width: 100%;
     background-color: #0685da;
@@ -450,6 +456,25 @@ h5 {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+}
+
+.deal-info {
+    margin: 1rem auto;
+    width: 85vw;
+}
+
+.hot-deals-restaurants {
+    float: left;
+    clear: none;
+}
+
+.hot-deals-attractions {
+    float: right;
+    clear: none;
+}
+
+.deal-button {
+    margin-top: 2rem;
 }
 
 /*active and hover styles for accordian button*/
