@@ -191,6 +191,12 @@ then click 'open browser' next to port 8000.
 
 I looked for information about each location online, mainly using Wikipedia. I always wrote the sections in my own words and didn't copy and paste. 
 The google maps section was created with examples from their documentation page and was amended to suit my purposes. 
+
 ### <h3>Media</h3>
 
 All media used has been attributed in the body of the HTML - below the image on the site. 
+
+### <h3>Acknowledgements</h3>
+
+I drew inspiration from [W3 schools](http://w3schools.com/) for a few of my scripts. I used W3 Schools for a reference of how to make the 
+Accordion and Slideshow but amended these for my own purposes.
