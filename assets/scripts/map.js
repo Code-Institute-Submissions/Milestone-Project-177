@@ -12,16 +12,17 @@ function scrollToMap() {
     var element = document.getElementById("map");
     //gets listings 
     const listings = document.getElementById("listing");
-    //
+    //Gets Popular locations section
+    const popularLocationsHeader = document.getElementById("popular-locations-header");
 
     //Checks if listings are showing
     if (listings.style.display == "block") {
         //Scrolls to listings if they are showing
         listings.scrollIntoView(false);
     }
-    //If listings aren't showing, scroll to map
+    //If listings aren't showing, scroll to Popular locations header
     else {
-        element.scrollIntoView(false);
+        popularLocationsHeader.scrollIntoView();
     }
 }
 

@@ -433,6 +433,8 @@ h5 {
     top: 5px;
     width: 100vw;
     height: 100vh;
+    padding: 0!important;
+    margin: 0!important;
     background-color: #fff;
 }
 
@@ -444,10 +446,11 @@ h5 {
 
 .close-button {
     position: relative;
-    right: 5px;
+    left: 0;
     top: 5px;
     color: #0685da;
     font-size: 2rem;
+    width: 1rem;
 }
 
 .close-button:hover {
@@ -507,14 +510,8 @@ h5 {
     width: 85vw;
 }
 
-.hot-deals-restaurants {
-    float: left;
-    clear: none;
-}
-
-.hot-deals-attractions {
-    float: right;
-    clear: none;
+.deal-info p {
+    color: #0685da;
 }
 
 .deal-button {
@@ -569,8 +566,7 @@ h5 {
 }
 
 #newsletter-button {
-    float: right;
-    margin-right: 1rem;
+    margin: 1rem auto;
 }
 
 .newsletter-button {

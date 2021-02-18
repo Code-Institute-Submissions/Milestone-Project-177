@@ -72,7 +72,7 @@ I am an admin who...:
 6) Drop-down on which the user can select to search for either Hotels, Restaurants and Bars or Attractions in the City they search for in the search box.
 7) Google Maps Map which shows Barcelona on page loading and shows results of search from the search box. 
 8) Results list, hidden until user searches for a City. 
-9) Down arrow which scrolls the window to the map section if the results section is hidden and scrolls window to results section if results are showing.
+9) Down arrow which scrolls the window to the popular locations section if the results section is hidden and scrolls window to results section if results are showing.
 10) Slides section which contains information, attractions and links to hotels for a few popular holiday destinations. 
 11) The slides section can be navigated by clicking the left and right icons at the top and bottom of this section. 
 12) Read More / Read less buttons in the Location summary section of the popular location sections, hidden by default on larger devices and shown on smaller device. 
