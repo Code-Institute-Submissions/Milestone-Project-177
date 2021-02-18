@@ -12,6 +12,7 @@
     <script src="assets/scripts/moreless.js"></script>
     <script src="assets/scripts/scrollspy.js"></script>
     <script defer src="assets/scripts/slideshow.js"></script>
+    <script src="assets/scripts/filter.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
     <script src="assets/scripts/map.js"></script>
@@ -1144,32 +1145,164 @@
             <!-- buttons -->
             <!-- left-bottom -->
             <div class="left-bottom" onclick="slides(-1)">
-                <i class="fas fa-chevron-circle-left"></i>
+                <a class="btn btn-outline-primary">Previous</a>
             </div>
 
             <!-- left top-->
             <div class="left-top" onclick="slides(-1)">
-                <i class="fas fa-chevron-circle-left"></i>
+                <a class="btn btn-outline-primary">Previous</a>
             </div>
 
             <!-- right-bottom -->
             <div class="right-bottom" onclick="slides(1)">
-                <i class="fas fa-chevron-circle-right"></i>
+                <a class="btn btn-outline-primary">Next</a>
             </div>
             <!-- right-top -->
             <div class="right-top" onclick="slides(1)">
-                <i class="fas fa-chevron-circle-right"></i>
+                <a class="btn btn-outline-primary">Next</a>
             </div>
         </div>
     </div>
     <!--End of popular locations-->
 
+    <hr>
+
+    <!--Popular Attractions-->
+    <div class="container-fluid popular-attractions">
+        <div class="row">
+            <div class="col text-center">
+                <h3>Popular Attractions</h3>
+
+                <div id="filter-buttons">
+                    <button class="btn btn-primary filter-active" onclick="showAll()"> Show all</button>
+                    <button class="btn btn-primary" onclick="showUk()"> UK</button>
+                    <button class="btn btn-primary" onclick="showUsaCanada()"> USA / Canada</button>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-12 col-lg-6 usa-canada">
+                <div class="popular-attractions">
+                    <h4>Niagra Falls</h4>
+
+                    <img class="popular-attractions-img" src="assets/images/niagrafalls.jpg" alt="Niagra Falls">
+
+                    <div class="source">
+                        Image by <a
+                            href="https://pixabay.com/users/vicznutz-9347854/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3487935">vicznutz</a>
+                        from <a
+                            href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3487935">Pixabay</a>
+
+                    </div>
+
+                    <p class="popular-attractions-text">
+                        Niagra falls is a group of three waterfalls on the border of New York, United States, and
+                        Ontario, Canada.
+                    </p>
+
+                    <div class="popular-attractions-button">
+                        <a target="_blank" class="btn btn-outline-primary btn-sm"
+                            href="https://www.tripadvisor.co.uk/Attractions-g154998-Activities-c42-Niagara_Falls_Ontario.html">Book
+                            a tour</a>
+                    </div>
+
+                    <hr class="d-sm-block d-md-none">
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-6 uk">
+                <div class="popular-attractions">
+                    <h4>Buckingham Palace</h4>
+
+                    <img class="popular-attractions-img" src="assets/images/buckinghamPalace.jpg"
+                        alt="Buckingham Palace">
+
+                    <div class="source">
+                        Image by <a
+                            href="https://pixabay.com/users/dimitrisvetsikas1969-1857980/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3920479">Dimitris
+                            Vetsikas</a> from <a
+                            href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3920479">Pixabay</a>
+                    </div>
+
+                    <p class="popular-attractions-text">
+                        Buckingham palace is without a doubt one of the most popular attractions in the UK.
+                        It is home to Queen Elizabeth II.
+                    </p>
+
+                    <div class="popular-attractions-button">
+                        <a target="_blank" class="btn btn-outline-primary btn-sm"
+                            href="https://www.rct.uk/visit/the-state-rooms-buckingham-palace">Book
+                            a tour</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-6 uk">
+                <div class="popular-attractions">
+                    <h4>Stonehenge</h4>
+
+                    <img class="popular-attractions-img" src="assets/images/stonehenge.jpg" alt="Grand Canyon">
+
+                    <div class="source">
+                        Image by <a
+                            href="https://pixabay.com/users/fotobias-30050/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=101801">Zdeněk
+                            Tobiáš</a> from <a
+                            href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=101801">Pixabay</a>
+                    </div>
+
+                    <p class="popular-attractions-text">
+                        Stonehenge is a prehistoric stone circle. It's usage / meaning is unknown but it is presumed
+                        that it was a religious site.
+                    </p>
+
+                    <div class="popular-attractions-button">
+                        <a target="_blank" class="btn btn-outline-primary btn-sm"
+                            href="https://stonehengetours.com/">Book
+                            a tour</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-6 usa-canada">
+                <div class="popular-attractions">
+                    <h4>The Grand Canyon</h4>
+
+                    <img class="popular-attractions-img" src="assets/images/grandCanyon.jpg" alt="Grand Canyon">
+
+                    <div class="source">
+                        Image by <a
+                            href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1245911">Free-Photos</a>
+                        from <a
+                            href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1245911">Pixabay</a>
+                    </div>
+
+                    <p class="popular-attractions-text">
+                        The Grand Canyon is a steep canyon and is almost 277 miles long. It attracts around 5 million
+                        visitors per year.
+                    </p>
+
+                    <div class="popular-attractions-button">
+                        <a target="_blank" class="btn btn-outline-primary btn-sm"
+                            href="https://www.getyourguide.com/grand-canyon-l489/">Book
+                            a tour</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Popular Attractions-->
+
+    <hr>
+    
     <!--Hot Deals-->
     <div id="hot-deals" class="container-fluid">
         <div class="row">
             <div class="col hot-deals">
 
-                <h3 class="text-center">Hot Deals</h3>
+                <h3 class="blue text-center">Hot Deals</h3>
 
                 <button id="first-accordion" class="accordion btn btn-outline-primary">Deal 1</button>
                 <div class="accordion-box">
@@ -1309,16 +1442,6 @@
         </div>
     </div>
     <!--End of Hot Deals-->
-
-    <!--Popular Attractions-->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-
-            </div>
-        </div>
-    </div>
-    <!--End of Popular Attractions-->
 
     <!--Modal Containing Newsletter form-->
     <div id="newsletter-modal" class="newsletter-modal">
