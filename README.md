@@ -160,6 +160,8 @@ I click all the links from different positions on the page and check if they're 
 
 The only problems I have faced are with using Google Maps on Internet Explorer. The map doesn't show and this a known bug of the system. 
 This also affects the down arrow button - it does not scroll to it's intended elements. This is due to the issues with Google Maps on Internet Explorer. 
+As Internet Explorer is no longer a supported browser I didn't focus to much of my time on to trying to fix this 
+but this will be the next focus of the proejct. 
 
 The next update that will be done to this project is to fix the issue of the map not showing on Internet Explorer. 
 
@@ -188,7 +190,7 @@ then click 'open browser' next to port 8000.
 ### <h3>Content</h3>
 
 I looked for information about each location online, mainly using Wikipedia. I always wrote the sections in my own words and didn't copy and paste. 
-
+The google maps section was created with examples from their documentation page and was amended to suit my purposes. 
 ### <h3>Media</h3>
 
 All media used has been attributed in the body of the HTML - below the image on the site. 
