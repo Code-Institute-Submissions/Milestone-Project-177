@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
     <title>Milestone Project 2</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/scripts/accordion.js"></script>
@@ -13,18 +14,11 @@
     <script src="assets/scripts/scrollspy.js"></script>
     <script defer src="assets/scripts/slideshow.js"></script>
     <script src="assets/scripts/filter.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-    </script>
     <script src="assets/scripts/map.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvy_IybO4-YfPFc8QyTejADQICwR-xESo&libraries=places&callback=initMap">
         </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_xFHwE8JejuO2qYlvGugdB");
-        })();
-    </script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -1451,33 +1445,6 @@
         </div>
     </div>
     <!--End of Hot Deals-->
-
-    <!--Modal Containing Newsletter form-->
-    <div id="newsletter-modal" class="newsletter-modal">
-
-        <div class="modal-content">
-            <!--Close button-->
-            <span class="close-button">&timesb;</span>
-
-            <!--Newsletter form-->
-            <form name="newsletterForm" onsubmit="return sendEmail(this)">
-
-                <h3>Sign up for our Newsletter</h3>
-
-                <label for="from_name">Full Name:</label>
-                <input id="from_name" type="text" name="from_name" placeholder="John Doe">
-
-                <label for="email">Email Address:</label>
-                <input type="email" name="email" id="email" placeholder="person@example.com">
-                <input type="submit" value="Submit">
-            </form>
-
-        </div>
-    </div>
-
-    <div id="newsletter-button" class="text-center">
-        <a class="btn btn-warning">Sign up for our Newsletter</a>
-    </div>
 
     <!--Footer-->
     <footer class="text-center">

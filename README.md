@@ -10,6 +10,8 @@ and Bars or Attractions in their chosen city anywhere in the world.
 
 The site also features a selection of popular holiday destinations with links to our selection of Hotels.
 
+The site also feautres a few popular attractions and buttons to filter the attractions to show all, ones only in UK or ones only in USA / Canada. 
+
 The future plans of the site would be to allow users to create an account to save their Holiday plans, share Holiday experiences with friends and 
 and also to provide Hotel, Flights and attraction booking functionality.  
 
@@ -79,10 +81,12 @@ I am an admin who...:
 This toggles an additional paragraph of information to read more / less. 
 13) Hot deals section to provide deals to the user. 
 14) The hot deals section is laid out as an accordian, with collapsible sections. 
-15) Popular Attractions section. Large image as a card which, when clicked on / hovered over shows info about attractions and link to book tickets. 
-16) Link to sign up for Newsletter, when clicked on pops up a modal containing a form to sign up for the sites newsletter. 
-17) The newsletter is linked to email.js and sends the user an automatic reply.
-18) Brand logo to re-inforce brand loyalty
+15) Popular Attractions section. Large image as a card which, when clicked on / hovered over shows info about attractions and link to book tickets. ) 
+16) The newsletter is linked to email.js and sends the user an automatic reply.
+17) Brand logo to re-inforce brand loyalty
+18) Popular Attractions section which consists of a few of our top picks of attractions to see. 
+19) The popular attractions section is filterable to narrow down the attractions. 
+
 
 <hr>
 
@@ -122,12 +126,36 @@ This was used to link to the newsletter form and send both the user and myself a
 9) [GitPod](https://www.gitpod.io/) is an Integrated development environment which is used to test and edit code. 
 I used it to edit my website and for version control linked to github.
 10) [GithubPages](https://pages.github.com/) Is a platform for hosting websites. It was used to host my finished project. 
+12) [Jshint](https://jshint.com/) Is a platform to test problems with Javascript. I used it to check if there are any logic problem with my javsscript
+code. 
 
 <hr>
 
 ## <h2>Testing</h2>
 
+I use [Jshint](https://jshint.com/) to ensure the scripts that I have written don't have any logic problems. I paste my code into the site and 
+it evaluates my code to check for any problems.
+
+I also use [Jslint](https://jslint.com/) to check for any syntax errors. 
+
+I also use [W3 Validator](https://validator.w3.org/) to test the validity of my HTML5 code. 
+
+I also use [CSS Validator](https://jigsaw.w3.org/css-validator/) to test the validity of my css3 code. 
+
 <hr>
+
+I test my projects in multiple browsers and different devices. 
+I first check the changes that I have made in Google Chrome and check for any errors in the console. 
+If no errors / design problems then I will test this on [JS bin](http://jsbin.com/?html,output) to see if the script is doing as intended. 
+
+If no errors / design problems then I will test this on Internet Explorer, Mozilla Firefox and Microsoft Edge. 
+
+When testing I click all of the links and interactive elements to test how they react when called upon. When testing I didn't notice 
+any problems with the links / buttons on any screen size or any browser. 
+
+The only problems I have faced are with using Google Maps on Internet Explorer. The map doesn't show and this a known bug of the system. 
+
+
 
 ## <h2>Deployment</h2>
 
@@ -152,6 +180,8 @@ then click 'open browser' next to port 8000.
 
 ### <h3>Content</h3>
 
+I looked for information about each location online, mainly using Wikipedia. I always wrote the sections in my own words and didn't copy and paste. 
+
 ### <h3>Media</h3>
 
-### <h3>Acknowledgements</h3>
+All media used has been attributed in the body of the HTML - below the image on the site. 

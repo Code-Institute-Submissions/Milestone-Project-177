@@ -391,28 +391,28 @@ h5 {
 }
 
 .left-bottom {
-    left: 10px;
+    left: 5px;
     bottom: 0;
     font-size: 1.5rem;
     border-radius: 10%;
 }
 
 .left-top {
-    left: 10px;
+    left: 5px;
     top: 1%;
     font-size: 1.5rem;
     border-radius: 10%;
 }
 
 .right-bottom {
-    right: 10px;
+    right: 5px;
     bottom: 0;
     font-size: 1.5rem;
     border-radius: 10%;
 }
 
 .right-top {
-    right: 10px;
+    right: 5px;
     top: 1%;
     font-size: 1.5rem;
     border-radius: 10%;
@@ -423,39 +423,6 @@ h5 {
 }
 /*End of slide buttons*/
 /*End of Popular locations*/
-
-/*Modal*/
-#newsletter-modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 5px;
-    top: 5px;
-    width: 100vw;
-    height: 100vh;
-    padding: 0!important;
-    margin: 0!important;
-    background-color: #fff;
-}
-
-.modal-content {
-    width: 80%;
-    color: #0685da;
-    margin: 20% auto;
-}
-
-.close-button {
-    position: relative;
-    left: 0;
-    top: 5px;
-    color: #0685da;
-    font-size: 2rem;
-    width: 1rem;
-}
-
-.close-button:hover {
-    cursor: pointer;
-}
 
 /*Hot Deals*/
 /*accordian button*/
