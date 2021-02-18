@@ -263,10 +263,6 @@ h5 {
     padding: 0 5px;
 }
 
-.more-link {
-    color: #0e4061;
-}
-
 #popular-locations-header {
     font-family: 'Montserrat', sans-serif;
 }
@@ -324,10 +320,6 @@ h5 {
 .card {
     height: 65vh;
     margin-bottom: 0.5rem;
-}
-
-.hotel-card {
-    border-bottom: 1px solid #0685da;
 }
 
 .hotel-card-img {
