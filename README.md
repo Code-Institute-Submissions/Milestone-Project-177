@@ -128,6 +128,7 @@ I used it to edit my website and for version control linked to github.
 10) [GithubPages](https://pages.github.com/) Is a platform for hosting websites. It was used to host my finished project. 
 12) [Jshint](https://jshint.com/) Is a platform to test problems with Javascript. I used it to check if there are any logic problem with my javsscript
 code. 
+13 [Bootstrap](https://getbootstrap.com/) is a framework of HTML5, CSS3 and JavaScript intended to speed up the development process. 
 
 <hr>
 
@@ -144,6 +145,8 @@ I also use [CSS Validator](https://jigsaw.w3.org/css-validator/) to test the val
 
 <hr>
 
+I check if my site is responsive by running the project locally and checking this using Chrome developer tools as well as checking on other devices. 
+
 I test my projects in multiple browsers and different devices. 
 I first check the changes that I have made in Google Chrome and check for any errors in the console. 
 If no errors / design problems then I will test this on [JS bin](http://jsbin.com/?html,output) to see if the script is doing as intended. 
@@ -153,8 +156,12 @@ If no errors / design problems then I will test this on Internet Explorer, Mozil
 When testing I click all of the links and interactive elements to test how they react when called upon. When testing I didn't notice 
 any problems with the links / buttons on any screen size or any browser. 
 
-The only problems I have faced are with using Google Maps on Internet Explorer. The map doesn't show and this a known bug of the system. 
+I click all the links from different positions on the page and check if they're working as expected. 
 
+The only problems I have faced are with using Google Maps on Internet Explorer. The map doesn't show and this a known bug of the system. 
+This also affects the down arrow button - it does not scroll to it's intended elements. This is due to the issues with Google Maps on Internet Explorer. 
+
+The next update that will be done to this project is to fix the issue of the map not showing on Internet Explorer. 
 
 
 ## <h2>Deployment</h2>

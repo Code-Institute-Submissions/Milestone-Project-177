@@ -328,7 +328,7 @@ h5 {
 }
 
 .amenities {
-    float: left;
+    margin: 0 auto;
 }
 
 .hotel-amenities, .room-amenities, .hotel-amenities li, .room-amenities li {
@@ -351,10 +351,6 @@ h5 {
 
 .stars {
     text-align: center;
-}
-
-.hotel-amenities-header {
-    float: left;
 }
 
 .tourist-attraction-summary {
@@ -455,7 +451,7 @@ h5 {
 @media only screen and (max-width: 992px) {
     .deals-card-image {
         height: 60vh;
-        width: 60vw;
+        width: 90vw;
     }
 }
 
@@ -479,6 +475,7 @@ h5 {
 
 .deal-info p {
     color: #0685da;
+    font-size: 1.3rem;
 }
 
 .deal-button {
