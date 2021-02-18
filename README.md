@@ -80,7 +80,7 @@ I am an admin who...:
 12) Read More / Read less buttons in the Location summary section of the popular location sections, hidden by default on larger devices and shown on smaller device. 
 This toggles an additional paragraph of information to read more / less. 
 13) Hot deals section to provide deals to the user. 
-14) The hot deals section is laid out as an accordian, with collapsible sections. 
+14) The hot deals section is laid out as an accordion, with collapsible sections. 
 15) Popular Attractions section. Large image as a card which, when clicked on / hovered over shows info about attractions and link to book tickets. ) 
 16) The newsletter is linked to email.js and sends the user an automatic reply.
 17) Brand logo to re-inforce brand loyalty
